@@ -732,7 +732,500 @@ section { position: relative; }
 </head>
 <body>
 
+===== Navigation =====
+<nav class="nav" id="nav">
+  <a href="#hero" class="nav__logo">
+      المحمدي
 
+    </span>
+  </a>
+  <div class="nav__links">
+    <a href="#services" class="nav__link">خدماتنا</a>
+    <a href="#process" class="nav__link">آلية العمل</a>
+    <a href="#gallery" class="nav__link">أعمالنا</a>
+    <a href="#why" class="nav__link">لماذا نحن</a>
+    <a href="#coverage" class="nav__link">مناطق التغطية</a>
+  </div>
+  <a href="tel:0582717472" class="nav__phone">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </svg>
+    <span>0582717472</span>
+  </a>
+  <div class="nav__burger" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ===== Mobile Menu ===== -->
+<div class="nav__mobile-menu" id="mobileMenu">
+  <button class="nav__mobile-close" id="mobileClose" aria-label="إغلاق القائمة">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 6L6 18M6 6l12 12"/>
+    </svg>
+  </button>
+  <a href="#services" class="nav__mobile-link">خدماتنا</a>
+  <a href="#process" class="nav__mobile-link">آلية العمل</a>
+  <a href="#gallery" class="nav__mobile-link">أعمالنا</a>
+  <a href="#why" class="nav__mobile-link">لماذا نحن</a>
+  <a href="#coverage" class="nav__mobile-link">مناطق التغطية</a>
+  <a href="tel:0582717472" class="nav__mobile-phone">اتصل الآن: 0582717472</a>
+  <a href="tel:0577801602" class="nav__mobile-phone">اتصل ثاني: 0577801602</a>
+</div>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <div class="hero__slider" id="heroSlider">
+      <div class="hero__slide is-active" data-slide="0">
+        <img src="https://z-cdn-media.chatglm.cn/files/e0bf1f85-178d-4710-8a3c-ba3991c9fc5c.png?auth_key=1881853001-39eb6884304e4a60b899c72e1e607a73-0-bbcb7e4fe2305947ececbfb3347be0cb" alt="فريق المحمدي لنقل العفش أثناء تحميل أثاث مغلف بعناية">
+      </div>
+      <div class="hero__slide" data-slide="1">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.38.56 AM.jpeg" alt="نقل عفش بالشاحنات">
+      </div>
+      <div class="hero__slide" data-slide="2">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.38.57 AM.jpeg" alt="فك وتركيب غرف نوم">
+      </div>
+      <div class="hero__slide" data-slide="3">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.39.10 AM.jpeg" alt="تغليف الأثاث والأجهزة">
+      </div>
+      <div class="hero__slide" data-slide="4">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.39.12 AM.jpeg" alt="نقل المكاتب والشركات">
+      </div>
+    </div>
+    <div class="hero__slider-dots" id="heroDots"></div>
+  </div>
+
+
+  <div class="hero__inner">
+    <div></div>
+    <div class="hero__content">
+      <div class="hero__eyebrow" id="hero-eyebrow">
+        <span>القصيم · بريدة · داخل وخارج المنطقة</span>
+      </div>
+      <h1 class="hero__title" id="hero-title">
+        المحمدي لنقل العفش والأثاث
+        <em>يدٌ أمينة على ما تملك</em>
+      </h1>
+      <p class="hero__sub" id="hero-sub">
+        نقلٌ احترافي للأثاث داخل القصيم وخارجها، يقوم على فكٍّ وتركيبٍ دقيق، وتغليفٍ محكم، وعمّالٍ مدرّبين يعرفون قيمة كل قطعة. خدمة سريعة، أمان كامل، وضمانٌ على كل ما ننقل.
+      </p>
+      <div class="hero__ctas" id="hero-cta">
+        <a href="tel:0582717472" class="btn btn--primary">
+          <span>اتصل الآن</span>
+          <span class="btn__arrow">←</span>
+        </a>
+        <a href="#services" class="btn btn--ghost">
+          <span>تصفّح خدماتنا</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Intro / About ===== -->
+<section class="section intro" id="about" data-reveal>
+  <div class="container">
+    <div class="intro__grid">
+      <div class="intro__text">
+        <div class="eyebrow"><span>عن الشركة</span></div>
+        <h2 class="section-title">أكثرُ من عشر سنوات<br>في خدمة العائلات والشركات</h2>
+        <div class="intro__paragraphs" data-stagger>
+          <p>بدأت "المحمدي" كورشة صغيرة لفكّ وتركيب الأثاث في بريدة، ومع السنوات اتسع العمل ليشمل نقل العفش داخلياً وخارجياً، بأدواتٍ حديثة وسياراتٍ مجهّزة بعناية. لم نتوسّع على حساب التفاصيل — بل بقينا على المبدأ نفسه: نُعامل كل قطعة كأنها لنا.</p>
+          <p>اليوم، يمرّ عبر أيدينا يومياً عشرات المنازل والمكاتب، نُغلف، نفكّ، نُحمّل، ونُركّب — وكل خطوة يقوم بها عمّالٌ مدرّبون، تحت إشراف ميداني، وضمانٍ مكتوب. لا نُساوم على الأمان، ولا على المواعيد.</p>
+          <p>نخدم القصيم كاملةً: بريدة، عنيزة، الرس، المذنب، البكيرية، الأسياح، رياض الخبراء، النبهانية، وحتى خارج المنطقة حين يحتاج العميل رحلةً أطول بمستوى الخدمة نفسه.</p>
+        </div>
+        <div class="intro__signature">
+          <div>
+            <div class="intro__signature-name">عبدالله المحمدي</div>
+            <div class="intro__signature-role">المدير العام</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro__stats">
+        <div class="intro__stat">
+          <div class="intro__stat-num">12<span class="intro__stat-suffix">+</span></div>
+          <div class="intro__stat-label">سنة من الخبرة الميدانية</div>
+        </div>
+        <div class="intro__stat">
+          <div class="intro__stat-num">8500<span class="intro__stat-suffix">+</span></div>
+          <div class="intro__stat-label">عملية نقل ناجحة</div>
+        </div>
+        <div class="intro__stat">
+          <div class="intro__stat-num">24</div>
+          <div class="intro__stat-label">عاملًا مدرّبًا متفرغًا</div>
+        </div>
+        <div class="intro__stat">
+          <div class="intro__stat-num">100<span class="intro__stat-suffix">٪</span></div>
+          <div class="intro__stat-label">ضمان على كل ما ننقل</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section class="services" id="services">
+  <div class="services__header" data-reveal>
+    <div class="eyebrow"><span>ما الذي نُجيده</span></div>
+    <h2 class="section-title">خدماتٌ متكاملة لكل ما يثقل الباب</h2>
+    <p class="section-lead">من غرف النوم إلى المطابخ، ومن المكيفات إلى الشاشات والأجهزة الكهربائية — كل خدمة لها فريقها وأدواتها. مرّر للأسفل لترى كل بطاقة تُغطّي ما قبلها.</p>
+  </div>
+
+  <div class="services-stack" id="services-stack">
+    <div class="services-stack-pin" id="services-stack-pin">
+      <article class="service-card" data-card="0">
+        <div class="service-card__media">
+          <img src="img/WhatsApp Image 2026-06-19 at 9.38.56 AM.jpeg" alt="نقل عفش بالشاحنات">
+          <div class="service-card__index">01 / 07</div>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__num">01</div>
+          <div>
+            <div class="service-card__cat">خدمة الرئيسية</div>
+            <h3 class="service-card__title">نقل العفش والأثاث</h3>
+            <p class="service-card__desc">نقلٌ كامل للأثاث المنزلي والمكتبي داخل القصيم وخارجها، بسياراتٍ مجهّزة بوسائد حماية وأحزمة تثبيت، وسائقين يعرفون طرق المنطقة فرعاً فرعاً.</p>
+            <ul class="service-card__features">
+              <li>سيارات مغلقة ومغطاة</li>
+              <li>تثبيت الأثاث بالأحزمة</li>
+              <li>تأمين على البضائع المنقولة</li>
+              <li>متابعة ميدانية لكل رحلة</li>
+            </ul>
+          </div>
+          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
+        </div>
+      </article>
+
+      <article class="service-card" data-card="1">
+        <div class="service-card__media">
+          <img src="img/WhatsApp Image 2026-06-19 at 9.38.57 AM.jpeg" alt="فك وتركيب غرف نوم">
+          <div class="service-card__index">02 / 07</div>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__num">02</div>
+          <div>
+            <div class="service-card__cat">فك وتركيب</div>
+            <h3 class="service-card__title">غرف النوم والمجالس</h3>
+            <p class="service-card__desc">فكّ وتركيب غرف النوم بكل تفاصيلها — الكبتات، السرير، الطاولات، المرايا — مع ترقيم القطع ووضعها في أكياس مغلقة لضمان عودة تركيبها بأبعادها الأصلية.</p>
+            <ul class="service-card__features">
+              <li>ترقيم القطع قبل الفك</li>
+              <li>حفظ البراغي في أكياس</li>
+              <li>أدوات أصلية لكل نوع أثاث</li>
+              <li>إعادة تركيب مطابقة للأصل</li>
+            </ul>
+          </div>
+          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
+        </div>
+      </article>
+
+      <article class="service-card" data-card="2">
+        <div class="service-card__media">
+          <img src="img/WhatsApp Image 2026-06-19 at 9.38.58 AM.jpeg" alt="نقل وتركيب المطابخ">
+          <div class="service-card__index">03 / 07</div>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__num">03</div>
+          <div>
+            <div class="service-card__cat">فك وتركيب</div>
+            <h3 class="service-card__title">المطابخ والأجهزة المدمجة</h3>
+            <p class="service-card__desc">فكّ مطابخ الألمنيوم والخشب بأيدي نجارين متخصصين، مع ضمان إعادة التركيب بنفس المحاذاة. نتعامل مع الأجهزة المدمجة بعناية: الثلاجة، الفرن، الغسالة، الميكروويف.</p>
+            <ul class="service-card__features">
+              <li>نجارون متخصصون</li>
+              <li>حماية أسطح العمل</li>
+              <li>فك الأجهزة المدمجة بأمان</li>
+              <li>إعادة المحاذاة الأصلية</li>
+            </ul>
+          </div>
+          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
+        </div>
+      </article>
+
+      <article class="service-card" data-card="3">
+        <div class="service-card__media">
+          <img src="img/WhatsApp Image 2026-06-19 at 9.39.09 AM.jpeg" alt="فك وتركيب المكيفات">
+          <div class="service-card__index">04 / 07</div>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__num">04</div>
+          <div>
+            <div class="service-card__cat">فك وتركيب</div>
+            <h3 class="service-card__title">المكيفات السبليت والشباك</h3>
+            <p class="service-card__desc">فكّ وتركيب جميع أنواع المكيفات — سبليت، شباك، مخفي، كاسيت — بفنيين معتمدين. شفط الفريون قبل الفك، وإعادة الشحن بعد التركيب، مع اختبار التشغيل.</p>
+            <ul class="service-card__features">
+              <li>فنيون معتمدون</li>
+              <li>شفط الفريون قبل الفك</li>
+              <li>إعادة شحن وتشغيل</li>
+              <li>ضمان على التركيب</li>
+            </ul>
+          </div>
+          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
+        </div>
+      </article>
+
+      <article class="service-card" data-card="4">
+        <div class="service-card__media">
+          <img src="img/WhatsApp Image 2026-06-19 at 9.39.10 AM.jpeg" alt="تغليف الأثاث والأجهزة">
+          <div class="service-card__index">05 / 07</div>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__num">05</div>
+          <div>
+            <div class="service-card__cat">حماية وتغليف</div>
+            <h3 class="service-card__title">تغليف الأثاث والأجهزة الكهربائية</h3>
+            <p class="service-card__desc">تغليفٌ احترافي بـ: النايلون الفقاعي، الكراتين المقواة، الأغطية القماشية، والنايلون الشداد. كل قطعة تُغلّف حسب طبيعتها — الزجاج، الخشب، الإلكترونيات، التحف.</p>
+            <ul class="service-card__features">
+              <li>نايلون فقاعي مزدوج</li>
+              <li>كراتين مقواة للأطراف</li>
+              <li>أغطية قماش للأثاث الفاخر</li>
+              <li>تغليف خاص للتحف والأنتيكات</li>
+            </ul>
+          </div>
+          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
+        </div>
+      </article>
+
+      <article class="service-card" data-card="5">
+        <div class="service-card__media">
+          <img src="img/WhatsApp Image 2026-06-19 at 9.39.12 AM.jpeg" alt="نقل المكاتب والشركات">
+          <div class="service-card__index">06 / 07</div>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__num">06</div>
+          <div>
+            <div class="service-card__cat">خدمات الشركات</div>
+            <h3 class="service-card__title">نقل المكاتب والشركات</h3>
+            <p class="service-card__desc">نقلٌ كامل للمكاتب والإدارات — الأثاث المكتبي، الأجهزة، الملفات، السيرفرات — في عطلة نهاية الأسبوع لتقليل التوقف. خطة عمل مسبقة، وتسليمٌ مقسّم على مراحل.</p>
+            <ul class="service-card__features">
+              <li>تنفيذ في الإجازات</li>
+              <li>ترقيم الصناديق حسب القسم</li>
+              <li>خطط نقل مخصصة</li>
+              <li>تنسيق مع قسم IT</li>
+            </ul>
+          </div>
+          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
+        </div>
+      </article>
+
+      <article class="service-card" data-card="6">
+        <div class="service-card__media">
+          <img src="img/WhatsApp Image 2026-06-19 at 9.39.13 AM.jpeg" alt="فك وتركيب الستائر والشاشات">
+          <div class="service-card__index">07 / 07</div>
+        </div>
+        <div class="service-card__body">
+          <div class="service-card__num">07</div>
+          <div>
+            <div class="service-card__cat">لمسات أخيرة</div>
+            <h3 class="service-card__title">الستائر والشاشات والتفاصيل</h3>
+            <p class="service-card__desc">لأن البيت لا يكتمل بدونها — فكّ وتركيب الستائر بأنواعها، الشاشات الذكية، اللوحات، المرايا الكبيرة، والمعلقات. تركيبٌ بمستوى، وتسليمٌ جاهز للسكن.</p>
+            <ul class="service-card__features">
+              <li>ستائر رول، بلوك، كلاسيك</li>
+              <li>تركيب الشاشات على الجدار</li>
+              <li>تعليق اللوحات والمرايا</li>
+              <li>تسليم البيت جاهزاً</li>
+            </ul>
+          </div>
+          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Process ===== -->
+<section class="section process" id="process" data-reveal>
+  <div class="container">
+    <div class="process__head">
+      <div class="eyebrow"><span>آلية العمل</span></div>
+      <h2 class="section-title">من أول اتصال حتى آخر قطعة في مكانها</h2>
+      <p class="section-lead">خمس خطوات واضحة، لا مفاجآت فيها — تعرف في كل لحظة ما الذي يحدث، ومن المسؤول، ومتى ينتهي.</p>
+    </div>
+
+    <div class="process__grid" data-stagger>
+      <div class="process__step"><div class="process__num">1</div><h3 class="process__step-title">تواصل واستفسار</h3><p class="process__step-desc">اتصالٌ أو واتساب — نأخذ منك تفاصيل المنزل، عدد الغرف، الأثاث، الوجهة. نسجّل كل شيء بدقة.</p></div>
+      <div class="process__step"><div class="process__num">2</div><h3 class="process__step-title">الكشف والتسعير</h3><p class="process__step-desc">نزور الموقع إن لزم، أو نقدّم سعراً نهائياً مكتوباً بناءً على التفاصيل. لا رسوم خفية، لا زيادات لاحقة.</p></div>
+      <div class="process__step"><div class="process__num">3</div><h3 class="process__step-title">الفك والتغليف</h3><p class="process__step-desc">يصل الفريق في الموعد — يفكّ الأثاث، يُغلّف القطع، يرقّم الصناديق. أنت تراقب، ولا تعمل.</p></div>
+      <div class="process__step"><div class="process__num">4</div><h3 class="process__step-title">النقل الآمن</h3><p class="process__step-desc">تحميلٌ بالأحزمة، تثبيتٌ بالوسائد، سائقٌ يعرف الطريق. الرحلة مغطاة بالضمان من الباب إلى الباب.</p></div>
+      <div class="process__step"><div class="process__num">5</div><h3 class="process__step-title">التركيب والترتيب</h3><p class="process__step-desc">إعادة تركيب الأثاث في أماكنه، تعليق الستائر والشاشات، إزالة مخلفات التغليف. تسلم بيتاً جاهزاً.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Gallery ===== -->
+<section class="section gallery" id="gallery" data-reveal>
+  <div class="container">
+    <div class="gallery__head">
+      <div class="gallery__head-text">
+        <div class="eyebrow"><span>من أعمالنا</span></div>
+        <h2 class="section-title">صورٌ من الميدان</h2>
+        <p class="section-lead">لقطات من رحلات نقل فعلية — توضّح كيف نُغلف، كيف نُحمّل، وكيف نُسلّم.</p>
+      </div>
+      <div class="gallery__head-meta">+ 8500 عملية منذ 2014</div>
+    </div>
+
+    <div class="gallery__grid" data-stagger>
+      <div class="gallery__item gallery__item--a">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.38.56 AM (1).jpeg" alt="فريق نقل على السلم">
+        <div class="gallery__item-cap"><small>العملية #4218</small>نقل أثاث طابقين — بريدة</div>
+      </div>
+      <div class="gallery__item gallery__item--b">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.38.57 AM.jpeg" alt="تحميل أريكة مغلفة">
+        <div class="gallery__item-cap"><small>العملية #4189</small>تغليف أريكة فاخرة — عنيزة</div>
+      </div>
+      <div class="gallery__item gallery__item--c">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.38.58 AM (1).jpeg" alt="تغليف غرفة نوم">
+        <div class="gallery__item-cap"><small>العملية #4175</small>غرفة نوم</div>
+      </div>
+      <div class="gallery__item gallery__item--d">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.39.09 AM.jpeg" alt="تغليف مطبخ">
+        <div class="gallery__item-cap"><small>العملية #4163</small>مطبخ ألمنيوم</div>
+      </div>
+      <div class="gallery__item gallery__item--e">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.39.10 AM.jpeg" alt="تحميل الشاحنة">
+        <div class="gallery__item-cap"><small>العملية #4151</small>تحميل الشاحنة — الرس</div>
+      </div>
+      <div class="gallery__item gallery__item--f">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.39.12 AM (1).jpeg" alt="نقل مكتب">
+        <div class="gallery__item-cap"><small>العملية #4138</small>نقل مقر شركة — بريدة</div>
+      </div>
+      <div class="gallery__item gallery__item--g">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.39.12 AM.jpeg" alt="تركيب مكيف">
+        <div class="gallery__item-cap"><small>العملية #4126</small>تركيب سبليت</div>
+      </div>
+      <div class="gallery__item gallery__item--h">
+        <img src="img/WhatsApp Image 2026-06-19 at 9.39.13 AM (1).jpeg" alt="تركيب ستائر">
+        <div class="gallery__item-cap"><small>العملية #4118</small>تركيب ستائر كلاسيك — المذنب</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why us ===== -->
+<section class="section why" id="why" data-reveal>
+  <div class="container">
+    <div class="why__grid">
+      <div class="why__head">
+        <div class="eyebrow"><span>لماذا المحمدي</span></div>
+        <h2 class="section-title">ستة أسباب تجعلنا الخيار الأول</h2>
+        <p class="section-lead">لا نقول إننا الأفضل — نقول إننا نُقدّم سبباً واضحاً وراء كل ميزة. اختر السبب الذي يهمّك أكثر.</p>
+      </div>
+
+      <ol class="why__list" data-stagger>
+        <li class="why__item"><div class="why__item-num">01<small>السرعة</small></div><div><h3 class="why__item-title">خدمة سريعة، عمالة مدرّبة</h3><p class="why__item-desc">فريقنا مُدرّب على إتمام العمل في الوقت المتفق عليه — لا تأخير، لا تمدد. عمّال يعرفون تسلسل العمل ولا يتعلمون على حساب وقتك.</p></div></li>
+        <li class="why__item"><div class="why__item-num">02<small>الأمان</small></div><div><h3 class="why__item-title">تحميل وتنزيل باحترافية</h3><p class="why__item-desc">أحزمة تثبيت، وسائد حماية، طرق تحميل مدروسة. الأثاث لا يُحمّل عشوائياً، بل يُرتّب في الشاحنة بحسب الوزن والهشاشة.</p></div></li>
+        <li class="why__item"><div class="why__item-num">03<small>الانتشار</small></div><div><h3 class="why__item-title">نخدمك أينما كنت</h3><p class="why__item-desc">داخل القصيم: بريدة، عنيزة، الرس، المذنب، البكيرية، الأسياح. وخارجها حين تحتاج رحلةً أطول بنفس المستوى.</p></div></li>
+        <li class="why__item"><div class="why__item-num">04<small>الضمان</small></div><div><h3 class="why__item-title">ضمانٌ مكتوب على كل ما ننقل</h3><p class="why__item-desc">عقد يحدد المسؤولية، وضمان يغطي أي ضرر غير متوقع. لسنا شركة تختفي بعد التسليم — نحن هنا بعد الرحلة كما قبلها.</p></div></li>
+        <li class="why__item"><div class="why__item-num">05<small>الشفافية</small></div><div><h3 class="why__item-title">تسعيرٌ نهائي مُسبق</h3><p class="why__item-desc">السعر الذي تسمعه أول مرة هو السعر الذي تدفعه. لا رسوم إضافية لـ"السلالم"، لا مفاجآت لـ"المسافة". كل شيء مكتوب.</p></div></li>
+        <li class="why__item"><div class="why__item-num">06<small>الخبرة</small></div><div><h3 class="why__item-title">أكثر من 12 سنة في الميدان</h3><p class="why__item-desc">عشرات المنازل يومياً، آلاف العمليات سنوياً، أخطاءٌ قلّمنا وحلولٌ متراكمة. كل سنة خبرة تعني عمليةٌ أكثر سلاسة لك.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Coverage ===== -->
+<section class="section coverage" id="coverage" data-reveal>
+  <div class="container">
+    <div class="coverage__inner">
+      <div class="coverage__map">
+        <iframe src="https://maps.google.com/maps?q=Al%20Qassim%20Saudi%20Arabia&t=&z=7&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="coverage__text">
+        <div class="eyebrow"><span>مناطق التغطية</span></div>
+        <h2 class="section-title">نُغطّي القصيم<br>وما حولها بالكامل</h2>
+        <p class="section-lead">من بريدة مركزاً رئيسياً، تنطلق فرقنا يومياً إلى كل محافظات القصيم. وحين تستدعي الحاجة، نُكمل الرحلة خارج المنطقة — إلى الرياض، حائل، المدينة، وحيثما كنت.</p>
+        <ul class="coverage__list">
+          <li>بريدة</li><li>عنيزة</li><li>الرس</li><li>المذنب</li>
+          <li>البكيرية</li><li>الأسياح</li><li>رياض الخبراء</li><li>النبهانية</li>
+          <li>البدائع</li><li>حائل</li><li>الرياض</li><li>خارج المنطقة</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA Banner ===== -->
+<section class="cta-banner" id="contact" data-reveal>
+  <div class="cta-banner__inner">
+    <div class="cta-banner__eyebrow"><span>جاهزون لخدمتك</span></div>
+    <h2 class="cta-banner__title">اتصل الآن، واحصل على <em>تسعيرٍ نهائي</em><br>في أقل من ساعة</h2>
+    <p class="cta-banner__sub">لا رسوم على الاستفسار، لا التزام قبل الاتفاق. مجرد مكالمة تعرف فيها كل التفاصيل: السعر، الموعد، حجم الفريق، نوع الشاحنة.</p>
+
+    <div class="cta-banner__phones">
+      <a href="tel:0582717472" class="cta-banner__phone">
+        <div class="cta-banner__phone-label">الاتصال الأول</div>
+        <div class="cta-banner__phone-num">0582717472</div>
+      </a>
+      <a href="tel:0577801602" class="cta-banner__phone">
+        <div class="cta-banner__phone-label">الاتصال الثاني</div>
+        <div class="cta-banner__phone-num">0577801602</div>
+      </a>
+    </div>
+
+    <div class="cta-banner__hours"><strong>متاح يومياً:</strong> من 7 صباحاً حتى 12 منتصف الليل — طوارئ خارج الدوام بطلب مسبق</div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">المحمدي<small>نقل العفش والأثاث</small></div>
+        <p class="footer__brand-desc">شركة سعودية متخصصة في نقل العفش والأثاث داخل القصيم وخارجها. فك، تركيب، تغليف، نقل مكيفات، نقل مطابخ، نقل مكاتب — بضمان كامل وعمّال مدرّبين.</p>
+      </div>
+
+      <div>
+        <div class="footer__col-title">روابط</div>
+        <ul class="footer__list">
+          <li><a href="#about">عن الشركة</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#process">آلية العمل</a></li>
+          <li><a href="#gallery">أعمالنا</a></li>
+          <li><a href="#coverage">مناطق التغطية</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__col-title">خدماتنا</div>
+        <ul class="footer__list">
+          <li><a href="#services">نقل عفش وأثاث</a></li>
+          <li><a href="#services">فك وتركيب غرف نوم</a></li>
+          <li><a href="#services">فك وتركيب مطابخ</a></li>
+          <li><a href="#services">فك وتركيب مكيفات</a></li>
+          <li><a href="#services">تغليف الأثاث</a></li>
+          <li><a href="#services">نقل مكاتب وشركات</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__col-title">تواصل</div>
+        <ul class="footer__list">
+          <li><span>القصيم — بريدة</span></li>
+          <li><a href="tel:0582717472" class="footer__phone">0582717472</a></li>
+          <li><a href="tel:0577801602" class="footer__phone">0577801602</a></li>
+          <li><span>يومياً 7 ص — 12 م</span></li>
+          <li><span>ضمان مكتوب على كل عملية</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-text">© 2024 المحمدي لنقل العفش والأثاث — جميع الحقوق محفوظة</div>
+      <div class="footer__bottom-keys">نقل عفش بالقصيم · نقل أثاث بريدة · فك وتركيب · تغليف · نقل مكيفات · نقل مطابخ · نقل مكاتب · شركة نقل عفش</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Floating call ===== -->
+<div class="float-call" id="float-call">
+  <a href="tel:0582717472" class="float-call__btn" aria-label="اتصل بنا">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+  <a href="https://wa.me/966582717472" class="float-call__btn float-call__btn--ghost" aria-label="واتساب">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
 
 <script>
 /* ===== Lenis smooth scroll ===== */
