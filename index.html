@@ -3,1408 +3,835 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>المحمدي لنقل العفش والأثاث بالقصيم وخارجها | خدمة احترافية</title>
-<meta name="description" content="شركة المحمدي لنقل العفش والأثاث بالقصيم وخارجها — فك وتركيب، تغليف احترافي، عمالة مدربة، نقل آمن. اتصل: 0582717472 — 0577801602">
-<meta name="keywords" content="نقل عفش, نقل أثاث, شركة نقل عفش, نقل عفش بالقصيم, نقل عفش بريدة, فك وتركيب أثاث, فك غرف نوم, تركيب غرف نوم, نقل مكاتب, تغليف عفش, تحميل وتنزيل أثاث, نقل عفش رخيص, نقل عفش مع التغليف, فك وتركيب مطابخ, نقل مطابخ, تركيب مطابخ, فك مكيفات, تركيب مكيفات, نقل مكيفات سبليت, عمال نقل عفش, شركة المحمدي, نقل أثاث احترافي, نقل عفش آمن, نقل عفش سريع, نقل عفش مع الضمان, نقل عفش داخل القصيم, نقل عفش خارج القصيم">
-
+<title>المحمدي لنقل العفش والأثاث بالقصيم | 0582717472</title>
+<meta name="description" content="شركة المحمدي لنقل العفش والأثاث بالقصيم — فك وتركيب، تغليف احترافي، عمالة مدربة. اتصل: 0582717472">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap">
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.13/dist/lenis.min.js"></script>
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
-:root {
-  /* ===== Black / White / Blue palette ===== */
-  --navy-900: #04070d;   /* deep black-blue background */
-  --navy-800: #0a0f1a;   /* panel background */
-  --navy-700: #101826;   /* raised panel */
-  --navy-500: #1b2740;   /* borders / mid */
-  --navy-100: #eef2f8;   /* off-white body text */
-  --amber-500: #2f6fed;  /* primary blue accent */
-  --amber-400: #5b8fff;  /* lighter blue (hover) */
-  --amber-100: #ffffff;  /* pure white headings */
-  --ease-quiet: cubic-bezier(.22, 1, .36, 1);
-  --ease-precise: cubic-bezier(.4, 0, .2, 1);
-  --ease-emphasis: cubic-bezier(.16, 1, .3, 1);
-  --font-display: 'El Messiri', 'Amiri', serif;
-  --font-body: 'Noto Kufi Arabic', sans-serif;
-  --font-latin: 'Cormorant Garamond', serif;
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --white:#ffffff;
+  --bg:#f8f9fb;
+  --bg2:#f0f2f5;
+  --text:#1a1a2e;
+  --text2:#4a4a5a;
+  --text3:#7a7a8a;
+  --orange:#e8590c;
+  --orange-light:#fff4ed;
+  --orange-hover:#d14e08;
+  --blue:#1d4ed8;
+  --blue-light:#eff6ff;
+  --green:#16a34a;
+  --green-light:#f0fdf4;
+  --border:#e5e7eb;
+  --shadow:0 1px 3px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.04);
+  --shadow-lg:0 8px 30px rgba(0,0,0,.1);
+  --shadow-xl:0 20px 50px rgba(0,0,0,.12);
+  --radius:12px;
+  --radius-lg:20px;
+  --font-h:'El Messiri',serif;
+  --font-b:'Noto Kufi Arabic',sans-serif;
+  --transition:all .3s cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);font-weight:400;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto;object-fit:cover}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+ul{list-style:none}
+
+/* ===== NAV ===== */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:var(--transition)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:.9rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.nav-logo{display:flex;align-items:center;gap:.6rem}
+.nav-logo-icon{width:42px;height:42px;background:var(--orange);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-h);font-size:1.3rem;font-weight:700}
+.nav-logo-text{font-family:var(--font-h);font-size:1.35rem;font-weight:700;color:var(--text);line-height:1.2}
+.nav-logo-text small{display:block;font-size:.6rem;font-weight:500;color:var(--orange);letter-spacing:.15em;text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-link{font-size:.88rem;font-weight:500;color:var(--text2);position:relative;transition:var(--transition);padding:.3rem 0}
+.nav-link:hover{color:var(--orange)}
+.nav-link::after{content:'';position:absolute;bottom:-2px;right:0;width:0;height:2px;background:var(--orange);border-radius:2px;transition:width .3s ease}
+.nav-link:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:.5rem;background:var(--orange);color:#fff;padding:.6rem 1.3rem;border-radius:50px;font-size:.85rem;font-weight:600;transition:var(--transition);white-space:nowrap}
+.nav-cta:hover{background:var(--orange-hover);transform:translateY(-1px);box-shadow:0 4px 15px rgba(232,89,12,.3)}
+.nav-cta i{font-size:.75rem}
+.burger{display:none;flex-direction:column;gap:5px;width:24px;padding:4px 0;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--text);border-radius:2px;transition:var(--transition)}
+.burger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+.mobile-menu{position:fixed;inset:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);z-index:999;display:none;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;padding:5rem 2rem 2rem}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:1.4rem;font-weight:600;color:var(--text);padding:.8rem 2rem;border-radius:var(--radius);transition:var(--transition);text-align:center;width:100%;max-width:300px}
+.mobile-menu a:hover{background:var(--orange-light);color:var(--orange)}
+.mobile-menu .mobile-phone{margin-top:1.5rem;background:var(--orange);color:#fff;border-radius:50px;padding:1rem 2rem;font-size:1.1rem}
+.mobile-menu .mobile-phone:hover{background:var(--orange-hover)}
+.mobile-close{position:absolute;top:1.2rem;left:1.2rem;width:40px;height:40px;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--text);transition:var(--transition)}
+.mobile-close:hover{background:var(--orange-light);color:var(--orange)}
+
+@media(max-width:968px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:flex}
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: auto; }
+/* ===== HERO ===== */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--text)}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.45}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,26,46,.85) 0%,rgba(26,26,46,.5) 50%,rgba(26,26,46,.3) 100%)}
+.hero-content{position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:7rem 1.5rem 4rem;width:100%}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(232,89,12,.2);border:1px solid rgba(232,89,12,.4);color:#ffb87a;padding:.4rem 1rem;border-radius:50px;font-size:.78rem;font-weight:600;margin-bottom:1.5rem;backdrop-filter:blur(8px)}
+.hero-badge i{font-size:.65rem}
+.hero-title{font-family:var(--font-h);font-size:clamp(2.2rem,5.5vw,4rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:1.2rem;max-width:700px}
+.hero-title span{color:var(--orange)}
+.hero-desc{font-size:clamp(.95rem,1.5vw,1.15rem);color:rgba(255,255,255,.8);max-width:560px;line-height:1.85;margin-bottom:2.5rem;font-weight:300}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 2rem;border-radius:50px;font-size:.92rem;font-weight:600;transition:var(--transition);border:2px solid transparent}
+.btn-primary{background:var(--orange);color:#fff;border-color:var(--orange)}
+.btn-primary:hover{background:var(--orange-hover);border-color:var(--orange-hover);transform:translateY(-2px);box-shadow:0 8px 25px rgba(232,89,12,.35)}
+.btn-white{background:#fff;color:var(--text);border-color:#fff}
+.btn-white:hover{background:transparent;color:#fff;transform:translateY(-2px)}
+.btn i{font-size:.8rem}
+.hero-phones{display:flex;gap:2rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.15);flex-wrap:wrap}
+.hero-phone{display:flex;align-items:center;gap:.7rem;color:#fff}
+.hero-phone i{color:var(--orange);font-size:1rem;width:20px;text-align:center}
+.hero-phone a{color:#fff;font-size:1.15rem;font-weight:600;letter-spacing:.02em;transition:var(--transition)}
+.hero-phone a:hover{color:var(--orange)}
+.hero-phone small{display:block;font-size:.7rem;color:rgba(255,255,255,.5);font-weight:400;margin-top:1px}
 
-body {
-  font-family: var(--font-body);
-  font-weight: 300;
-  background: var(--navy-900);
-  color: var(--navy-100);
-  line-height: 1.7;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
-::selection { background: var(--amber-500); color: #ffffff; }
-img { display: block; max-width: 100%; height: auto; object-fit: cover; object-position: center; }
-a { color: inherit; text-decoration: none; }
-
-/* ===== Navigation ===== */
-.nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  padding: 1.5rem 3rem;
-  display: flex; align-items: center; justify-content: space-between;
-  background: rgba(4, 7, 13, 0);
-  transition: background 0.5s var(--ease-quiet), padding 0.5s var(--ease-quiet), border-color 0.5s var(--ease-quiet);
-  border-bottom: 1px solid transparent;
-}
-.nav.is-scrolled {
-  background: rgba(4, 7, 13, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 1rem 3rem;
-  border-bottom-color: rgba(47, 111, 237, 0.25);
-}
-.nav__logo {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: var(--amber-100);
-  display: flex; align-items: center; gap: 0.6rem;
-}
-.nav__logo-mark {
-  width: 36px; height: 36px;
-  border: 1px solid var(--amber-500);
-  border-radius: 50%;
-  display: inline-flex; align-items: center; justify-content: center;
-  font-family: var(--font-latin);
-  color: var(--amber-500);
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-.nav__logo-text { line-height: 1; }
-.nav__logo-text small {
-  display: block; font-family: var(--font-body); font-size: 0.65rem;
-  font-weight: 400; color: var(--amber-500); letter-spacing: 0.15em;
-  margin-top: 4px;
-}
-.nav__links { display: flex; gap: 2.5rem; align-items: center; }
-.nav__link {
-  font-family: var(--font-body);
-  font-size: 0.85rem; font-weight: 400;
-  color: var(--navy-100);
-  position: relative;
-  transition: color 0.3s var(--ease-precise);
-}
-.nav__link::after {
-  content: ''; position: absolute; bottom: -6px; right: 0;
-  width: 0; height: 1px; background: var(--amber-500);
-  transition: width 0.4s var(--ease-quiet);
-}
-.nav__link:hover { color: var(--amber-500); }
-.nav__link:hover::after { width: 100%; }
-
-.nav__phone {
-  font-family: var(--font-latin);
-  font-size: 1.05rem; font-weight: 500;
-  color: var(--amber-500);
-  letter-spacing: 0.05em;
-  display: flex; align-items: center; gap: 0.5rem;
-  padding: 0.55rem 1.2rem;
-  border: 1px solid var(--amber-500);
-  border-radius: 999px;
-  transition: background 0.3s var(--ease-precise), color 0.3s var(--ease-precise);
-}
-.nav__phone:hover { background: var(--amber-500); color: #ffffff; }
-
-.nav__burger { 
-  display: none; 
-  flex-direction: column; 
-  gap: 5px; 
-  cursor: pointer; 
-  width: 26px; 
-  height: 18px; 
-  position: relative; 
-  z-index: 120;
-}
-.nav__burger span {
-  width: 26px; height: 1px; background: var(--amber-500);
-  transition: all 0.3s var(--ease-precise);
-  border-radius: 1px;
-}
-.nav__burger.is-open span:nth-child(1) {
-  transform: rotate(45deg) translateY(9px);
-}
-.nav__burger.is-open span:nth-child(2) {
-  opacity: 0;
-  transform: translateX(-10px);
-}
-.nav__burger.is-open span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-9px);
+@media(max-width:640px){
+  .hero-content{padding:6rem 1.2rem 3rem}
+  .hero-btns{flex-direction:column}
+  .btn{justify-content:center;width:100%}
+  .hero-phones{flex-direction:column;gap:1rem}
 }
 
-@media (max-width: 1024px) {
-  .nav { padding: 1.2rem 1.5rem; }
-  .nav.is-scrolled { padding: 0.8rem 1.5rem; }
-  .nav__links, .nav__phone { display: none !important; }
-  .nav__burger { display: flex; }
+/* ===== STATS BAR ===== */
+.stats-bar{background:var(--white);border-bottom:1px solid var(--border);position:relative;z-index:3}
+.stats-inner{max-width:1280px;margin:0 auto;padding:2rem 1.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.stat-item{text-align:center;padding:.5rem}
+.stat-num{font-family:var(--font-h);font-size:2.2rem;font-weight:700;color:var(--orange);line-height:1}
+.stat-num span{font-size:1.2rem}
+.stat-label{font-size:.82rem;color:var(--text3);margin-top:.3rem;font-weight:500}
+@media(max-width:640px){
+  .stats-inner{grid-template-columns:repeat(2,1fr);gap:.5rem}
+  .stat-num{font-size:1.8rem}
 }
 
-.nav__mobile-menu {
-  position: fixed;
-  inset: 0;
-  background: rgba(4, 7, 13, 0.98);
-  backdrop-filter: blur(16px);
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 1.5rem 2rem;
-  gap: 1rem;
-  z-index: 110;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  animation: slideDownMenu 0.4s var(--ease-quiet);
-}
-.nav__mobile-menu.is-open { display: flex; }
-@keyframes slideDownMenu {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+/* ===== SECTIONS COMMON ===== */
+.section{padding:5rem 1.5rem}
+.section-inner{max-width:1280px;margin:0 auto}
+.section-header{text-align:center;margin-bottom:3.5rem}
+.section-label{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:700;color:var(--orange);letter-spacing:.2em;text-transform:uppercase;margin-bottom:.8rem;background:var(--orange-light);padding:.35rem 1rem;border-radius:50px}
+.section-label i{font-size:.6rem}
+.section-title{font-family:var(--font-h);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;color:var(--text);line-height:1.25;margin-bottom:1rem}
+.section-title span{color:var(--orange)}
+.section-desc{font-size:1rem;color:var(--text2);max-width:600px;margin:0 auto;line-height:1.8}
 
-.nav__mobile-close {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  background: transparent;
-  border: 1px solid rgba(47, 111, 237, 0.35);
-  color: var(--amber-500);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s var(--ease-precise);
-}
-.nav__mobile-close:hover { background: var(--amber-500); color: #ffffff; }
-.nav__mobile-close svg { width: 18px; height: 18px; }
+/* ===== ABOUT ===== */
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.about-img{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3;box-shadow:var(--shadow-xl)}
+.about-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.about-img:hover img{transform:scale(1.03)}
+.about-img-badge{position:absolute;bottom:1.2rem;right:1.2rem;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);padding:.8rem 1.2rem;border-radius:var(--radius);box-shadow:var(--shadow)}
+.about-img-badge strong{display:block;font-family:var(--font-h);font-size:1.5rem;color:var(--orange);line-height:1}
+.about-img-badge small{font-size:.7rem;color:var(--text3);font-weight:500}
+.about-text h2{font-family:var(--font-h);font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:700;color:var(--text);margin-bottom:1.2rem;line-height:1.3}
+.about-text h2 span{color:var(--orange)}
+.about-text p{color:var(--text2);line-height:1.9;margin-bottom:1.2rem;font-size:.95rem}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:2rem 0}
+.about-feat{display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text);font-weight:500}
+.about-feat i{color:var(--green);font-size:.65rem;width:22px;height:22px;background:var(--green-light);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.about-sig{display:flex;align-items:center;gap:1rem;padding-top:1.5rem;border-top:1px solid var(--border);margin-top:1.5rem}
+.about-sig-icon{width:48px;height:48px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-h);font-size:1.1rem;font-weight:700}
+.about-sig-name{font-family:var(--font-h);font-size:1.1rem;font-weight:600;color:var(--text)}
+.about-sig-role{font-size:.75rem;color:var(--text3);font-weight:500}
 
-.nav__mobile-link {
-  color: var(--navy-100);
-  font-family: var(--font-body);
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid rgba(47, 111, 237, 0.15);
-  transition: all 0.2s var(--ease-precise);
-  display: block;
-  text-align: center;
-  width: 100%;
-  max-width: 280px;
+@media(max-width:968px){
+  .about-grid{grid-template-columns:1fr;gap:2.5rem}
+  .about-img{aspect-ratio:16/9}
 }
-.nav__mobile-link:active, .nav__mobile-link:hover {
-  color: var(--amber-500);
-  transform: translateX(-6px);
-}
-.nav__mobile-phone {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 1.4rem;
-  border: 1px solid var(--amber-500);
-  border-radius: 999px;
-  color: var(--amber-100);
-  font-weight: 500;
-  font-size: 1.1rem;
-  margin-top: 1.5rem;
-  transition: all 0.3s var(--ease-precise);
-}
-.nav__mobile-phone:hover { background: var(--amber-500); color: #ffffff; }
-
-/* ===== Hero ===== */
-.hero {
-  position: relative; min-height: 100vh;
-  padding: 8rem 3rem 4rem;
-  display: flex; align-items: center;
-  overflow: hidden;
-  background: var(--navy-900);
-}
-.hero__bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
-.hero__bg::after {
-  content: ''; position: absolute; inset: 0;
-  background: linear-gradient(90deg,
-    var(--navy-900) 12%, rgba(4,7,13,0.80) 30%, rgba(4,7,13,0.55) 58%, rgba(4,7,13,0.34) 100%);
-  z-index: 2;
+@media(max-width:480px){
+  .about-features{grid-template-columns:1fr}
+  .section{padding:3.5rem 1rem}
 }
 
-/* ----- Hero slider ----- */
-.hero__slider { position: absolute; inset: 0; z-index: 0; }
-.hero__slide {
-  position: absolute; inset: 0;
-  opacity: 0;
-  transition: opacity 1.6s var(--ease-quiet);
-  will-change: opacity, transform;
-}
-.hero__slide.is-active { opacity: 1; z-index: 1; }
-.hero__slide img {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; opacity: 0.85;
-  transform: scale(1.08);
-  transition: transform 7s linear;
-}
-.hero__slide.is-active img { transform: scale(1.16); }
+/* ===== SERVICES ===== */
+.services{background:var(--bg)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.svc-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);transition:var(--transition);position:relative}
+.svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl);border-color:transparent}
+.svc-card-img{height:200px;overflow:hidden;position:relative}
+.svc-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.svc-card:hover .svc-card-img img{transform:scale(1.08)}
+.svc-card-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(0,0,0,.4))}
+.svc-card-num{position:absolute;top:1rem;right:1rem;background:rgba(255,255,255,.95);backdrop-filter:blur(4px);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:var(--orange);z-index:2;box-shadow:var(--shadow)}
+.svc-card-body{padding:1.5rem}
+.svc-card-cat{font-size:.7rem;font-weight:700;color:var(--orange);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.5rem}
+.svc-card-title{font-family:var(--font-h);font-size:1.2rem;font-weight:700;color:var(--text);margin-bottom:.6rem;line-height:1.3}
+.svc-card-desc{font-size:.88rem;color:var(--text2);line-height:1.7;margin-bottom:1rem}
+.svc-card-link{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;font-weight:600;color:var(--orange);transition:var(--transition)}
+.svc-card-link:hover{gap:.8rem}
+.svc-card-link i{font-size:.7rem;transition:var(--transition)}
 
-.hero__slider-dots {
-  position: absolute; bottom: 1.6rem; left: 50%; transform: translateX(-50%);
-  z-index: 4; display: flex; gap: 0.6rem;
-}
-.hero__slider-dot {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: rgba(255,255,255,0.35);
-  border: 1px solid rgba(47,111,237,0.6);
-  cursor: pointer; padding: 0; transition: background 0.3s var(--ease-precise), transform 0.3s var(--ease-precise);
-}
-.hero__slider-dot.is-active { background: var(--amber-500); transform: scale(1.25); }
+@media(max-width:968px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.services-grid{grid-template-columns:1fr}.svc-card-img{height:180px}}
 
-@media (max-width: 1024px) {
-  .hero__slider-dots { bottom: 1rem; }
-}
+/* ===== PROCESS ===== */
+.process{background:var(--white)}
+.process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;position:relative}
+.process-grid::before{content:'';position:absolute;top:32px;left:10%;right:10%;height:2px;background:var(--bg2);z-index:0}
+.step{text-align:center;position:relative;z-index:1}
+.step-icon{width:64px;height:64px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;color:#fff;font-size:1.1rem;box-shadow:0 4px 15px rgba(232,89,12,.3);position:relative}
+.step-icon::after{content:'';position:absolute;inset:-5px;border:2px dashed rgba(232,89,12,.25);border-radius:50%;animation:spin 20s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.step-num{font-family:var(--font-h);font-size:1.5rem;font-weight:700;color:var(--orange);margin-bottom:.3rem}
+.step-title{font-family:var(--font-h);font-size:1rem;font-weight:600;color:var(--text);margin-bottom:.4rem;line-height:1.3}
+.step-desc{font-size:.8rem;color:var(--text3);line-height:1.6}
 
-.hero__inner {
-  position: relative; z-index: 5; max-width: 1400px; margin: 0 auto; width: 100%;
-  display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center;
-}
-.hero__content { max-width: 720px; }
+@media(max-width:968px){.process-grid{grid-template-columns:repeat(3,1fr);gap:2rem}.process-grid::before{display:none}}
+@media(max-width:560px){.process-grid{grid-template-columns:1fr 1fr;gap:1.5rem}}
 
-.hero__eyebrow {
-  display: inline-flex; align-items: center; gap: 0.8rem;
-  font-family: var(--font-body); font-size: 0.8rem; font-weight: 500;
-  color: var(--amber-500); letter-spacing: 0.3em; text-transform: uppercase;
-  margin-bottom: 2rem; opacity: 0; transform: translateY(-12px);
+/* ===== GALLERY ===== */
+.gallery{background:var(--bg)}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:1rem}
+.gal-item{border-radius:var(--radius);overflow:hidden;position:relative;cursor:pointer}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease,filter .5s ease;filter:brightness(.9)}
+.gal-item:hover img{transform:scale(1.06);filter:brightness(1)}
+.gal-item::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.6) 0%,transparent 50%);opacity:0;transition:opacity .4s ease}
+.gal-item:hover::after{opacity:1}
+.gal-item-cap{position:absolute;bottom:.8rem;right:.8rem;left:.8rem;color:#fff;z-index:2;opacity:0;transform:translateY(8px);transition:var(--transition)}
+.gal-item:hover .gal-item-cap{opacity:1;transform:none}
+.gal-item-cap small{font-size:.65rem;color:var(--orange);font-weight:600;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:.2rem}
+.gal-item-cap span{font-size:.88rem;font-weight:500}
+.gal-1{grid-column:span 2;grid-row:span 2}
+.gal-2{grid-column:span 1;grid-row:span 1}
+.gal-3{grid-column:span 1;grid-row:span 1}
+.gal-4{grid-column:span 1;grid-row:span 2}
+.gal-5{grid-column:span 2;grid-row:span 1}
+.gal-6{grid-column:span 1;grid-row:span 1}
+.gal-7{grid-column:span 1;grid-row:span 1}
+@media(max-width:768px){
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px;gap:.6rem}
+  .gal-1,.gal-4{grid-column:span 2;grid-row:span 1}
 }
-.hero__eyebrow::before { content: ''; display: inline-block; width: 2rem; height: 1px; background: var(--amber-500); }
-
-.hero__title {
-  font-family: var(--font-display); font-weight: 600;
-  font-size: clamp(2.4rem, 6vw, 5rem); line-height: 1.1;
-  color: var(--amber-100); margin-bottom: 1.5rem;
-  opacity: 0; transform: translateY(40px);
-}
-.hero__title em {
-  font-style: normal; color: var(--amber-500); display: block;
-  font-size: 0.6em; font-weight: 400; letter-spacing: 0.05em; margin-top: 0.5rem;
-}
-
-.hero__sub {
-  font-family: var(--font-body); font-size: clamp(0.95rem, 1.3vw, 1.1rem);
-  font-weight: 300; line-height: 1.8; color: var(--navy-100);
-  margin-bottom: 3rem; max-width: 580px; opacity: 0; transform: translateY(20px);
-}
-
-.hero__ctas { display: flex; gap: 1.2rem; flex-wrap: wrap; opacity: 0; transform: translateY(16px); }
-
-.btn {
-  display: inline-flex; align-items: center; gap: 0.7rem;
-  padding: 1rem 2rem; font-family: var(--font-body); font-size: 0.9rem; font-weight: 500;
-  letter-spacing: 0.05em; border: 1px solid var(--amber-500); background: transparent;
-  color: var(--amber-100); cursor: pointer;
-  transition: background 0.4s var(--ease-quiet), color 0.4s var(--ease-quiet), transform 0.4s var(--ease-quiet);
-  border-radius: 2px;
-}
-.btn--primary { background: var(--amber-500); color: #ffffff; }
-.btn--primary:hover { background: var(--amber-400); transform: translateY(-2px); }
-.btn--ghost:hover { background: var(--amber-500); color: #ffffff; transform: translateY(-2px); }
-.btn__arrow { font-family: var(--font-latin); transition: transform 0.4s var(--ease-quiet); }
-.btn:hover .btn__arrow { transform: translateX(-4px); }
-
-.hero__visual {
-  position: relative; height: 70vh; min-height: 480px;
-  border: 1px solid rgba(47, 111, 237, 0.35); overflow: hidden;
-  box-shadow: 0 30px 60px -15px rgba(0,0,0,0.6);
-}
-.hero__visual img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.9); }
-.hero__visual-cap {
-  position: absolute; bottom: 1.5rem; right: 1.5rem; left: 1.5rem;
-  display: flex; justify-content: space-between; align-items: flex-end; z-index: 2;
-}
-.hero__visual-cap-text { font-family: var(--font-display); color: var(--amber-100); font-size: 1.1rem; }
-.hero__visual-cap-text small {
-  display: block; font-family: var(--font-body); font-size: 0.7rem; color: var(--amber-500);
-  letter-spacing: 0.2em; margin-bottom: 0.3rem; font-weight: 400;
+@media(max-width:480px){
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:130px}
+  .gal-1{grid-column:span 2;grid-row:span 2}
 }
 
-.hero__badge { position: absolute; top: 2rem; left: 2rem; width: 110px; height: 110px; z-index: 6; pointer-events: none; }
-.hero__badge-ring { position: absolute; inset: 0; border: 1px solid rgba(47, 111, 237, 0.7); border-radius: 50%; animation: spin-cw 22s linear infinite; }
-.hero__badge-ring--inner { inset: 14px; border-color: rgba(47, 111, 237, 0.35); animation: spin-ccw 16s linear infinite; }
-.hero__badge-text {
-  position: absolute; inset: 0; display: flex; flex-direction: column;
-  align-items: center; justify-content: center; font-family: var(--font-display);
-  color: var(--amber-500); text-align: center; line-height: 1;
-}
-.hero__badge-text strong { font-family: var(--font-latin); font-size: 1.6rem; font-weight: 600; margin-bottom: 4px; }
-.hero__badge-text small { font-family: var(--font-body); font-size: 0.55rem; font-weight: 500; letter-spacing: 0.2em; color: var(--amber-100); text-transform: uppercase; }
+/* ===== WHY US ===== */
+.why{background:var(--white)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.why-list{display:flex;flex-direction:column;gap:0}
+.why-item{display:flex;gap:1.2rem;padding:1.8rem 0;border-bottom:1px solid var(--border);transition:var(--transition)}
+.why-item:first-child{border-top:1px solid var(--border)}
+.why-item:hover{padding-right:.5rem}
+.why-icon{width:50px;height:50px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem;color:#fff}
+.why-icon.o{background:var(--orange)}
+.why-icon.b{background:var(--blue)}
+.why-icon.g{background:var(--green)}
+.why-item-title{font-family:var(--font-h);font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
+.why-item-desc{font-size:.88rem;color:var(--text2);line-height:1.7}
+.why-side{position:sticky;top:6rem}
+.why-side-img{border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:3/4;box-shadow:var(--shadow-xl);margin-bottom:1.5rem}
+.why-side-img img{width:100%;height:100%;object-fit:cover}
+.why-side-trust{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.trust-card{background:var(--bg);border-radius:var(--radius);padding:1.2rem;text-align:center;border:1px solid var(--border)}
+.trust-card i{font-size:1.5rem;color:var(--orange);margin-bottom:.5rem;display:block}
+.trust-card strong{display:block;font-size:.88rem;color:var(--text);font-weight:600}
+.trust-card small{font-size:.75rem;color:var(--text3)}
 
-@keyframes spin-cw { from { transform: rotate(0); } to { transform: rotate(360deg); } }
-@keyframes spin-ccw { from { transform: rotate(0); } to { transform: rotate(-360deg); } }
-
-@media (max-width: 1024px) {
-  .hero { padding: 6.5rem 1.5rem 2.5rem; }
-  .hero__inner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .hero__visual { height: 50vh; min-height: 360px; border-radius: 8px; }
-  .hero__badge { width: 88px; height: 88px; top: 1rem; left: 1rem; }
-  .hero__badge-text strong { font-size: 1.2rem; }
-}
-
-/* ===== Section base ===== */
-section { position: relative; }
-.section { padding: 8rem 3rem; }
-.container { max-width: 1400px; margin: 0 auto; }
-
-.eyebrow {
-  display: inline-flex; align-items: center; gap: 0.8rem; font-family: var(--font-body);
-  font-size: 0.78rem; font-weight: 500; color: var(--amber-500);
-  letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 1.5rem;
-  opacity: 0; transform: translateY(12px);
-  transition: opacity 0.6s var(--ease-quiet), transform 0.6s var(--ease-quiet);
-}
-.eyebrow::before { content: ''; display: inline-block; width: 0; height: 1px; background: var(--amber-500); transition: width 0.8s var(--ease-quiet) 0.3s; }
-.is-in .eyebrow { opacity: 1; transform: none; }
-.is-in .eyebrow::before { width: 2rem; }
-
-.section-title {
-  font-family: var(--font-display); font-weight: 600;
-  font-size: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.15; color: var(--amber-100);
-  margin-bottom: 1.5rem; opacity: 0; transform: translateY(30px);
-  transition: opacity 0.9s var(--ease-quiet) 0.15s, transform 0.9s var(--ease-quiet) 0.15s;
-}
-.is-in .section-title { opacity: 1; transform: none; }
-
-.section-lead {
-  font-family: var(--font-body); font-size: 1.05rem; font-weight: 300;
-  line-height: 1.85; color: var(--navy-100); max-width: 680px;
-  opacity: 0; transform: translateY(20px);
-  transition: opacity 0.9s var(--ease-quiet) 0.3s, transform 0.9s var(--ease-quiet) 0.3s;
-}
-.is-in .section-lead { opacity: 1; transform: none; }
-
-@media (max-width: 768px) { .section { padding: 5rem 1.5rem; } }
-
-/* ===== Intro ===== */
-.intro { background: var(--navy-800); border-top: 1px solid rgba(47, 111, 237, 0.12); }
-.intro__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-.intro__text { max-width: 580px; }
-.intro__paragraphs p {
-  font-family: var(--font-body); font-size: 1rem; font-weight: 300; line-height: 1.9;
-  margin-bottom: 1.5rem; color: var(--navy-100); opacity: 0; transform: translateY(25px);
-  transition: opacity 0.9s var(--ease-quiet), transform 0.9s var(--ease-quiet);
-  transition-delay: calc(var(--i, 0) * 110ms + 400ms);
-}
-.is-in .intro__paragraphs p { opacity: 1; transform: none; }
-
-.intro__signature { margin-top: 2.5rem; display: flex; align-items: center; gap: 1.2rem; padding-top: 2rem; border-top: 1px solid rgba(47, 111, 237, 0.22); }
-.intro__signature-name { font-family: var(--font-display); font-size: 1.3rem; color: var(--amber-100); }
-.intro__signature-role { font-family: var(--font-body); font-size: 0.78rem; color: var(--amber-500); letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px; }
-
-.intro__stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid rgba(47, 111, 237, 0.22); }
-.intro__stat { padding: 2.5rem 2rem; border-bottom: 1px solid rgba(47, 111, 237, 0.14); border-left: 1px solid rgba(47, 111, 237, 0.14); position: relative; background: var(--navy-900); }
-.intro__stat:nth-child(odd) { border-left: none; }
-.intro__stat:nth-child(3), .intro__stat:nth-child(4) { border-bottom: none; }
-.intro__stat-num { font-family: var(--font-latin); font-size: 3.5rem; font-weight: 500; color: var(--amber-500); line-height: 1; margin-bottom: 0.6rem; letter-spacing: -0.02em; }
-.intro__stat-label { font-family: var(--font-body); font-size: 0.85rem; color: var(--navy-100); font-weight: 400; }
-.intro__stat-suffix { font-family: var(--font-display); font-size: 0.95rem; color: var(--amber-500); margin-right: 0.4rem; }
-
-@media (max-width: 1024px) { .intro__grid { grid-template-columns: 1fr; gap: 3rem; } }
-@media (max-width: 560px) {
-  .intro__stats { grid-template-columns: 1fr; }
-  .intro__stat { border-left: none !important; border-bottom: 1px solid rgba(47, 111, 237, 0.14) !important; }
-  .intro__stat:last-child { border-bottom: none !important; }
+@media(max-width:968px){
+  .why-grid{grid-template-columns:1fr;gap:2.5rem}
+  .why-side{position:static;order:-1}
+  .why-side-img{aspect-ratio:16/9}
 }
 
-/* ===== Services ===== */
-.services { background: var(--navy-900); position: relative; }
-.services__header { padding: 8rem 3rem 4rem; text-align: center; max-width: 920px; margin: 0 auto; }
-.services__header .section-lead { margin: 0 auto; }
-.services-stack { position: relative; height: 600vh; }
-.services-stack-pin { height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 2rem 3rem; }
-.service-card {
-  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  width: min(1200px, 92vw); height: min(78vh, 640px); background: var(--navy-800);
-  border: 1px solid rgba(47, 111, 237, 0.25); display: grid; grid-template-columns: 1fr 1fr;
-  overflow: hidden; box-shadow: 0 35px 80px -20px rgba(0,0,0,0.75); will-change: transform, opacity;
-}
-.service-card__media { position: relative; overflow: hidden; background: var(--navy-900); }
-.service-card__media img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.8) contrast(1.1); transition: transform 1.4s var(--ease-quiet); }
-.service-card__media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(4,7,13,0.7), transparent 60%); }
-.service-card__index { position: absolute; top: 1.5rem; right: 1.5rem; font-family: var(--font-latin); font-size: 1rem; color: var(--amber-500); letter-spacing: 0.15em; z-index: 3; display: flex; align-items: center; gap: 0.5rem; }
-.service-card__index::before { content: ''; width: 2rem; height: 1px; background: var(--amber-500); }
+/* ===== COVERAGE ===== */
+.coverage{background:var(--bg)}
+.coverage-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.coverage-map{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--border);aspect-ratio:4/3}
+.coverage-map iframe{width:100%;height:100%;border:0}
+.coverage-cities{display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1.5rem;margin-top:1.5rem}
+.city{display:flex;align-items:center;gap:.5rem;font-size:.92rem;color:var(--text);padding:.5rem .8rem;background:var(--white);border-radius:var(--radius);border:1px solid var(--border);transition:var(--transition)}
+.city:hover{border-color:var(--orange);color:var(--orange);transform:translateX(-3px)}
+.city i{color:var(--orange);font-size:.65rem}
+@media(max-width:968px){.coverage-grid{grid-template-columns:1fr}.coverage-map{aspect-ratio:1/1}}
+@media(max-width:480px){.coverage-cities{grid-template-columns:1fr}}
 
-.service-card__body { padding: 3.5rem 3rem; display: flex; flex-direction: column; justify-content: space-between; position: relative; }
-.service-card__num { font-family: var(--font-latin); font-size: clamp(4rem, 8vw, 6.5rem); font-weight: 500; color: var(--amber-500); opacity: 0.2; line-height: 1; letter-spacing: -0.04em; }
-.service-card__cat { font-family: var(--font-body); font-size: 0.75rem; font-weight: 500; color: var(--amber-500); letter-spacing: 0.3em; text-transform: uppercase; margin-top: -1rem; margin-bottom: 1.2rem; }
-.service-card__title { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.2; color: var(--amber-100); margin-bottom: 1.4rem; }
-.service-card__desc { font-family: var(--font-body); font-size: 0.95rem; font-weight: 300; line-height: 1.85; color: var(--navy-100); margin-bottom: 1.5rem; max-width: 460px; }
-.service-card__features { list-style: none; margin-bottom: 2rem; }
-.service-card__features li { font-family: var(--font-body); font-size: 0.85rem; color: var(--navy-100); padding: 0.5rem 0; border-bottom: 1px solid rgba(47, 111, 237, 0.12); display: flex; align-items: center; gap: 0.7rem; }
-.service-card__features li::before { content: '◆'; color: var(--amber-500); font-size: 0.6rem; }
-.service-card__cta { display: inline-flex; align-items: center; gap: 0.6rem; font-family: var(--font-body); font-size: 0.85rem; color: var(--amber-500); letter-spacing: 0.1em; border-bottom: 1px solid var(--amber-500); padding-bottom: 0.4rem; align-self: flex-start; transition: color 0.3s var(--ease-precise), gap 0.3s var(--ease-precise); }
-.service-card__cta:hover { color: var(--amber-100); gap: 1rem; }
+/* ===== CTA ===== */
+.cta{background:var(--text);position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;top:-50%;right:-20%;width:500px;height:500px;background:radial-gradient(circle,rgba(232,89,12,.15),transparent 70%);border-radius:50%;pointer-events:none}
+.cta-inner{max-width:800px;margin:0 auto;text-align:center;position:relative;z-index:2;padding:5rem 1.5rem}
+.cta-label{display:inline-flex;align-items:center;gap:.5rem;background:rgba(232,89,12,.15);border:1px solid rgba(232,89,12,.3);color:#ffb87a;padding:.4rem 1.2rem;border-radius:50px;font-size:.78rem;font-weight:600;margin-bottom:1.5rem}
+.cta-title{font-family:var(--font-h);font-size:clamp(1.8rem,4.5vw,3rem);font-weight:700;color:#fff;line-height:1.25;margin-bottom:1rem}
+.cta-title span{color:var(--orange)}
+.cta-desc{font-size:1.05rem;color:rgba(255,255,255,.7);margin-bottom:2.5rem;line-height:1.8}
+.cta-phones{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.cta-phone{display:flex;flex-direction:column;align-items:center;gap:.3rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-lg);padding:1.5rem 2.5rem;min-width:200px;transition:var(--transition)}
+.cta-phone:hover{background:rgba(232,89,12,.15);border-color:rgba(232,89,12,.4);transform:translateY(-3px)}
+.cta-phone small{font-size:.7rem;color:rgba(255,255,255,.5);font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+.cta-phone a{color:#fff;font-size:1.5rem;font-weight:700;transition:var(--transition)}
+.cta-phone:hover a{color:var(--orange)}
+.cta-hours{color:rgba(255,255,255,.5);font-size:.88rem}
+.cta-hours strong{color:var(--orange)}
 
-@media (max-width: 900px) {
-  .service-card { grid-template-columns: 1fr; height: min(82vh, 700px); }
-  .service-card__media { height: 40%; }
-  .service-card__body { padding: 2rem 1.5rem; overflow-y: auto; }
-  .service-card__num { font-size: 3rem; }
+@media(max-width:640px){
+  .cta-phones{flex-direction:column;align-items:center}
+  .cta-phone{width:100%;max-width:300px}
 }
 
-/* ===== Process ===== */
-.process { background: var(--navy-800); border-top: 1px solid rgba(47, 111, 237, 0.12); }
-.process__head { text-align: center; margin-bottom: 5rem; }
-.process__head .section-lead { margin: 0 auto; }
-.process__grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; }
-.process__grid::before { content: ''; position: absolute; top: 32px; right: 8%; left: 8%; height: 1px; background: linear-gradient(90deg, transparent, rgba(47, 111, 237, 0.45), transparent); z-index: 0; }
-.process__step { text-align: center; padding: 0 1rem; position: relative; z-index: 1; opacity: 0; transform: translateY(30px); transition: opacity 0.9s var(--ease-quiet), transform 0.9s var(--ease-quiet); transition-delay: calc(var(--i, 0) * 130ms + 200ms); }
-.is-in .process__step { opacity: 1; transform: none; }
-.process__num { width: 64px; height: 64px; border-radius: 50%; background: var(--navy-900); border: 1px solid var(--amber-500); display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-latin); font-size: 1.4rem; font-weight: 500; color: var(--amber-500); margin-bottom: 1.5rem; position: relative; }
-.process__num::after { content: ''; position: absolute; inset: -6px; border: 1px solid rgba(47, 111, 237, 0.25); border-radius: 50%; }
-.process__step-title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; color: var(--amber-100); margin-bottom: 0.7rem; line-height: 1.3; }
-.process__step-desc { font-family: var(--font-body); font-size: 0.82rem; color: var(--navy-100); line-height: 1.7; }
+/* ===== FOOTER ===== */
+.footer{background:var(--text);color:rgba(255,255,255,.7);padding:4rem 1.5rem 1.5rem}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-brand{font-family:var(--font-h);font-size:1.5rem;font-weight:700;color:#fff;margin-bottom:.5rem}
+.footer-brand small{display:block;font-size:.65rem;color:var(--orange);letter-spacing:.15em;text-transform:uppercase;font-weight:600;margin-top:.3rem;font-family:var(--font-b)}
+.footer-desc{font-size:.88rem;line-height:1.8;margin-bottom:1.5rem;max-width:320px}
+.footer-col-title{font-size:.75rem;font-weight:700;color:var(--orange);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.2rem;padding-bottom:.7rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer-col a{display:block;font-size:.88rem;padding:.3rem 0;transition:var(--transition)}
+.footer-col a:hover{color:var(--orange);padding-right:.3rem}
+.footer-phone{color:var(--orange)!important;font-size:1.05rem!important;font-weight:600!important;direction:ltr;display:inline-block!important}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08);flex-wrap:wrap;gap:.8rem}
+.footer-copy{font-size:.78rem;color:rgba(255,255,255,.4)}
+.footer-keys{font-size:.7rem;color:rgba(255,255,255,.25);text-align:left;max-width:50%}
 
-@media (max-width: 1024px) { .process__grid { grid-template-columns: repeat(2, 1fr); gap: 3rem 1rem; } .process__grid::before { display: none; } }
-@media (max-width: 560px) { .process__grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+@media(max-width:968px){.footer-grid{grid-template-columns:1fr 1fr;gap:2rem}}
+@media(max-width:560px){.footer-grid{grid-template-columns:1fr;gap:1.5rem}.footer-bottom{flex-direction:column}.footer-keys{display:none}}
 
-/* ===== Gallery ===== */
-.gallery { background: var(--navy-900); }
-.gallery__head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem; flex-wrap: wrap; gap: 2rem; }
-.gallery__head-text { max-width: 600px; }
-.gallery__head .section-lead { margin-top: 1rem; }
-.gallery__head-meta { font-family: var(--font-body); font-size: 0.8rem; color: var(--amber-500); letter-spacing: 0.2em; text-transform: uppercase; padding-bottom: 0.5rem; }
-.gallery__grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 180px; gap: 1rem; }
-.gallery__item { position: relative; overflow: hidden; background: var(--navy-800); border: 1px solid rgba(47, 111, 237, 0.14); opacity: 0; transform: translateY(40px); transition: opacity 0.9s var(--ease-quiet), transform 0.9s var(--ease-quiet); transition-delay: calc(var(--i, 0) * 90ms); }
-.is-in .gallery__item { opacity: 1; transform: none; }
-.gallery__item img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s var(--ease-quiet), filter 0.6s var(--ease-quiet); filter: brightness(0.85) saturate(0.95); }
-.gallery__item:hover img { transform: scale(1.06); filter: brightness(1) saturate(1.05); }
-.gallery__item::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(4,7,13,0.78) 0%, transparent 50%); opacity: 0; transition: opacity 0.5s var(--ease-quiet); }
-.gallery__item:hover::after { opacity: 1; }
-.gallery__item-cap { position: absolute; bottom: 1rem; right: 1rem; left: 1rem; font-family: var(--font-display); color: var(--amber-100); font-size: 0.95rem; z-index: 2; opacity: 0; transform: translateY(10px); transition: opacity 0.4s var(--ease-quiet), transform 0.4s var(--ease-quiet); }
-.gallery__item:hover .gallery__item-cap { opacity: 1; transform: none; }
-.gallery__item-cap small { display: block; font-family: var(--font-body); font-size: 0.65rem; color: var(--amber-500); letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.3rem; font-weight: 400; }
+/* ===== FLOAT ===== */
+.float-btns{position:fixed;bottom:1.5rem;left:1.5rem;z-index:900;display:flex;flex-direction:column;gap:.6rem;opacity:0;transform:translateY(20px);transition:var(--transition)}
+.float-btns.show{opacity:1;transform:none}
+.float-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:#fff;box-shadow:0 4px 20px rgba(0,0,0,.25);transition:var(--transition);position:relative;border:none;cursor:pointer}
+.float-btn::after{content:'';position:absolute;inset:-4px;border:2px solid currentColor;border-radius:50%;opacity:.3;animation:pulse 2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.9);opacity:.5}100%{transform:scale(1.35);opacity:0}}
+.float-btn:hover{transform:scale(1.08)}
+.float-btn.call{background:var(--orange)}
+.float-btn.call2{background:var(--blue)}
+.float-btn.up{background:var(--text3);font-size:.9rem}
+.float-btn.up::after{display:none}
+@media(max-width:480px){.float-btn{width:46px;height:46px;font-size:1rem}.float-btns{bottom:1rem;left:1rem}}
 
-.gallery__item--a { grid-column: span 5; grid-row: span 2; }
-.gallery__item--b { grid-column: span 4; grid-row: span 2; }
-.gallery__item--c { grid-column: span 3; grid-row: span 1; }
-.gallery__item--d { grid-column: span 3; grid-row: span 1; }
-.gallery__item--e { grid-column: span 4; grid-row: span 2; }
-.gallery__item--f { grid-column: span 5; grid-row: span 2; }
-.gallery__item--g { grid-column: span 3; grid-row: span 1; }
-.gallery__item--h { grid-column: span 5; grid-row: span 1; }
+/* ===== ANIMATIONS ===== */
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.fade-up.visible{opacity:1;transform:none}
+.fade-up.d1{transition-delay:.1s}
+.fade-up.d2{transition-delay:.2s}
+.fade-up.d3{transition-delay:.3s}
+.fade-up.d4{transition-delay:.4s}
+.fade-up.d5{transition-delay:.5s}
+.fade-up.d6{transition-delay:.6s}
 
-@media (max-width: 900px) {
-  .gallery__grid { grid-template-columns: repeat(6, 1fr); grid-auto-rows: 140px; }
-  .gallery__item--a { grid-column: span 6; grid-row: span 2; }
-  .gallery__item--b { grid-column: span 3; grid-row: span 1; }
-  .gallery__item--c { grid-column: span 3; grid-row: span 1; }
-  .gallery__item--d { grid-column: span 3; grid-row: span 1; }
-  .gallery__item--e { grid-column: span 3; grid-row: span 1; }
-  .gallery__item--f { grid-column: span 6; grid-row: span 2; }
-  .gallery__item--g { grid-column: span 6; grid-row: span 1; }
-  .gallery__item--h { grid-column: span 6; grid-row: span 1; }
-}
-
-/* ===== Why us ===== */
-.why { background: var(--navy-800); border-top: 1px solid rgba(47, 111, 237, 0.12); }
-.why__grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; align-items: flex-start; }
-.why__head { position: sticky; top: 8rem; }
-.why__head .section-title { margin-bottom: 2rem; }
-.why__head .section-lead { margin-bottom: 2.5rem; }
-.why__list { list-style: none; }
-.why__item { padding: 2.5rem 0; border-top: 1px solid rgba(47, 111, 237, 0.18); display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: flex-start; opacity: 0; transform: translateY(25px); transition: opacity 0.9s var(--ease-quiet), transform 0.9s var(--ease-quiet); transition-delay: calc(var(--i, 0) * 110ms); }
-.is-in .why__item { opacity: 1; transform: none; }
-.why__item:last-child { border-bottom: 1px solid rgba(47, 111, 237, 0.18); }
-.why__item-num { font-family: var(--font-latin); font-size: 1.6rem; font-weight: 500; color: var(--amber-500); letter-spacing: 0.05em; }
-.why__item-num small { display: block; font-family: var(--font-body); font-size: 0.65rem; color: var(--amber-500); letter-spacing: 0.2em; margin-top: 0.3rem; text-transform: uppercase; }
-.why__item-title { font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; color: var(--amber-100); margin-bottom: 0.6rem; }
-.why__item-desc { font-family: var(--font-body); font-size: 0.92rem; line-height: 1.8; color: var(--navy-100); font-weight: 300; }
-
-@media (max-width: 1024px) {
-  .why__grid { grid-template-columns: 1fr; gap: 3rem; }
-  .why__head { position: static; }
-  .why__item { grid-template-columns: 60px 1fr; gap: 1.2rem; padding: 2rem 0; }
-}
-
-/* ===== Coverage ===== */
-.coverage { background: var(--navy-900); position: relative; overflow: hidden; }
-.coverage__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-
-.coverage__map {
-  position: relative;
-  aspect-ratio: 4/3;
-  border: 1px solid rgba(47, 111, 237, 0.25);
-  background: var(--navy-800);
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 20px 50px -10px rgba(0,0,0,0.55);
-}
-.coverage__map iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  filter: invert(0.92) hue-rotate(180deg) brightness(0.9) contrast(0.9) sepia(0.2);
-}
-.coverage__map::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(4,7,13,0.45) 0%, transparent 40%, transparent 60%, rgba(4,7,13,0.22) 100%);
-  pointer-events: none;
-}
-
-.coverage__text { max-width: 540px; }
-.coverage__list { list-style: none; margin-top: 2.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem 1.5rem; }
-.coverage__list li { font-family: var(--font-body); font-size: 0.9rem; color: var(--navy-100); display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 0; border-bottom: 1px solid rgba(47, 111, 237, 0.12); }
-.coverage__list li::before { content: '◆'; color: var(--amber-500); font-size: 0.55rem; }
-
-@media (max-width: 1024px) {
-  .coverage__inner { grid-template-columns: 1fr; gap: 3rem; }
-  .coverage__map { max-width: 100%; }
-}
-@media (max-width: 768px) {
-  .coverage__map { aspect-ratio: 1/1; }
-}
-
-/* ===== CTA Banner ===== */
-.cta-banner { background: var(--navy-900); padding: 7rem 3rem; position: relative; overflow: hidden; border-top: 1px solid rgba(47, 111, 237, 0.25); border-bottom: 1px solid rgba(47, 111, 237, 0.25); }
-.cta-banner::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(47, 111, 237, 0.10), transparent 70%); pointer-events: none; }
-.cta-banner__inner { max-width: 1100px; margin: 0 auto; text-align: center; position: relative; }
-.cta-banner__eyebrow { font-family: var(--font-body); font-size: 0.78rem; font-weight: 500; color: var(--amber-500); letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 1.5rem; display: inline-flex; align-items: center; gap: 0.8rem; }
-.cta-banner__eyebrow::before, .cta-banner__eyebrow::after { content: ''; display: inline-block; width: 2rem; height: 1px; background: var(--amber-500); }
-.cta-banner__title { font-family: var(--font-display); font-weight: 600; font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1.15; color: var(--amber-100); margin-bottom: 1.5rem; }
-.cta-banner__title em { font-style: normal; color: var(--amber-500); }
-.cta-banner__sub { font-family: var(--font-body); font-size: 1.05rem; color: var(--navy-100); max-width: 620px; margin: 0 auto 3rem; line-height: 1.8; }
-.cta-banner__phones { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
-.cta-banner__phone { display: flex; flex-direction: column; align-items: center; padding: 1.5rem 2.5rem; border: 1px solid var(--amber-500); background: rgba(47, 111, 237, 0.07); transition: background 0.4s var(--ease-quiet), transform 0.4s var(--ease-quiet); min-width: 220px; }
-.cta-banner__phone:hover { background: rgba(47, 111, 237, 0.15); transform: translateY(-3px); }
-.cta-banner__phone-label { font-family: var(--font-body); font-size: 0.7rem; color: var(--amber-500); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 0.6rem; }
-.cta-banner__phone-num { font-family: var(--font-latin); font-size: 1.8rem; font-weight: 500; color: var(--amber-100); letter-spacing: 0.03em; direction: ltr; }
-.cta-banner__hours { font-family: var(--font-body); font-size: 0.85rem; color: var(--navy-100); letter-spacing: 0.05em; margin-top: 1rem; }
-.cta-banner__hours strong { color: var(--amber-500); font-weight: 500; }
-
-@media (max-width: 768px) {
-  .cta-banner { padding: 5rem 1.5rem; }
-  .cta-banner__phones { gap: 1rem; }
-  .cta-banner__phone { min-width: 0; width: 100%; padding: 1.2rem 1.5rem; }
-}
-
-/* ===== Footer ===== */
-.footer { background: var(--navy-800); padding: 5rem 3rem 2rem; border-top: 1px solid rgba(47, 111, 237, 0.18); }
-.footer__inner { max-width: 1400px; margin: 0 auto; }
-.footer__grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 4rem; }
-.footer__brand-name { font-family: var(--font-display); font-size: 1.6rem; color: var(--amber-100); margin-bottom: 1rem; font-weight: 600; }
-.footer__brand-name small { display: block; font-family: var(--font-body); font-size: 0.7rem; color: var(--amber-500); letter-spacing: 0.25em; text-transform: uppercase; margin-top: 0.5rem; font-weight: 500; }
-.footer__brand-desc { font-family: var(--font-body); font-size: 0.88rem; line-height: 1.8; color: var(--navy-100); max-width: 360px; margin-bottom: 1.5rem; }
-.footer__col-title { font-family: var(--font-body); font-size: 0.75rem; font-weight: 500; color: var(--amber-500); letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 1.5rem; padding-bottom: 0.8rem; border-bottom: 1px solid rgba(47, 111, 237, 0.2); }
-.footer__list { list-style: none; }
-.footer__list li { margin-bottom: 0.7rem; }
-.footer__list a, .footer__list span { font-family: var(--font-body); font-size: 0.85rem; color: var(--navy-100); transition: color 0.3s var(--ease-precise); }
-.footer__list a:hover { color: var(--amber-500); }
-.footer__list .footer__phone { font-family: var(--font-latin); font-size: 1.1rem; color: var(--amber-500); direction: ltr; display: inline-block; }
-.footer__bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid rgba(47, 111, 237, 0.18); flex-wrap: wrap; gap: 1rem; }
-.footer__bottom-text { font-family: var(--font-body); font-size: 0.78rem; color: var(--navy-100); opacity: 0.6; letter-spacing: 0.05em; }
-.footer__bottom-keys { font-family: var(--font-body); font-size: 0.7rem; color: var(--amber-500); opacity: 0.7; letter-spacing: 0.1em; text-align: left; max-width: 50%; }
-
-@media (max-width: 1024px) { .footer__grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; } .footer { padding: 4rem 1.5rem 2rem; } }
-@media (max-width: 560px) { .footer__grid { grid-template-columns: 1fr; } .footer__bottom-keys { display: none; } }
-
-/* ===== Floating WhatsApp / Call ===== */
-.float-call { position: fixed; bottom: 2rem; left: 2rem; z-index: 80; display: flex; flex-direction: column; gap: 0.7rem; opacity: 0; transform: translateY(20px); transition: opacity 0.5s var(--ease-quiet), transform 0.5s var(--ease-quiet); }
-.float-call.is-visible { opacity: 1; transform: none; }
-.float-call__btn { width: 54px; height: 54px; border-radius: 50%; background: var(--amber-500); color: #ffffff; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(0,0,0,0.55); transition: transform 0.3s var(--ease-quiet), background 0.3s var(--ease-quiet); position: relative; }
-.float-call__btn::after { content: ''; position: absolute; inset: -6px; border: 1px solid var(--amber-500); border-radius: 50%; opacity: 0.4; animation: pulseRing 2.4s ease-out infinite; }
-@keyframes pulseRing { 0% { transform: scale(0.9); opacity: 0.6; } 100% { transform: scale(1.4); opacity: 0; } }
-.float-call__btn:hover { transform: scale(1.08); background: var(--amber-400); }
-.float-call__btn svg { width: 22px; height: 22px; }
-.float-call__btn--ghost { background: transparent; border: 1px solid var(--amber-500); color: var(--amber-500); }
-.float-call__btn--ghost:hover { background: var(--amber-500); color: #ffffff; }
-
-@media (max-width: 560px) { .float-call { bottom: 1rem; left: 1rem; } .float-call__btn { width: 46px; height: 46px; } }
-
-@media (max-width: 480px) {
-  body { font-size: 14px; }
-  .nav { padding: 1rem; }
-  .nav.is-scrolled { padding: 0.7rem 1rem; }
-  .nav__logo { font-size: 1.15rem; }
-  .nav__logo-mark { width: 32px; height: 32px; font-size: 0.85rem; }
-  
-  .hero { padding: 5.5rem 1rem 1.5rem; }
-  .hero__inner { grid-template-columns: 1fr; gap: 1.5rem; }
-  .hero__title { font-size: clamp(1.8rem, 4.5vw, 2.8rem); line-height: 1.2; }
-  .hero__sub { font-size: 0.9rem; line-height: 1.6; margin-bottom: 2rem; }
-  .hero__ctas { gap: 0.8rem; flex-wrap: wrap; }
-  .hero__visual { height: 40vh; min-height: 280px; border-radius: 8px; overflow: hidden; }
-  .hero__badge { width: 70px; height: 70px; top: 0.8rem; left: 0.8rem; }
-  .hero__badge-text strong { font-size: 1rem; }
-  
-  .section { padding: 3.5rem 1rem; }
-  .section-title { font-size: clamp(1.6rem, 3.5vw, 2rem); margin-bottom: 1rem; }
-  .section-lead { font-size: 0.9rem; }
-  
-  .intro__grid { gap: 1.5rem; }
-  .intro__stats { grid-template-columns: 1fr; }
-  .intro__stat { padding: 1.5rem 1rem; border-left: none !important; border-bottom: 1px solid rgba(47, 111, 237, 0.14) !important; }
-  .intro__stat:last-child { border-bottom: none !important; }
-  
-  .btn { padding: 0.85rem 1.5rem; font-size: 0.8rem; }
-  
-  .service-card { width: 95vw; height: auto; grid-template-columns: 1fr; margin-bottom: 1.5rem; border-radius: 8px; overflow: hidden; }
-  .service-card__media { height: 35vh; min-height: 200px; border-radius: 8px 8px 0 0; }
-  .service-card__body { padding: 1.5rem 1rem; font-size: 0.85rem; background: rgba(10, 15, 26, 0.85); border-radius: 0 0 8px 8px; }
-  .service-card__num { font-size: 2.5rem; }
-  .service-card__title { font-size: 1.3rem; }
-  .service-card__desc { font-size: 0.85rem; max-width: 100%; }
-  .service-card__features li { font-size: 0.8rem; }
-  
-  .services__header { padding: 3.5rem 1rem 2rem; }
-  .services-stack { height: 400vh; }
-  
-  .process__grid { grid-template-columns: 1fr; gap: 1.5rem; }
-  .process__grid::before { display: none; }
-  .process__num { width: 50px; height: 50px; font-size: 1.1rem; margin-bottom: 1rem; }
-  .process__step-title { font-size: 1rem; }
-  .process__step-desc { font-size: 0.75rem; line-height: 1.6; }
-  
-  .gallery__grid { grid-template-columns: repeat(3, 1fr); grid-auto-rows: 100px; gap: 0.4rem; }
-  .gallery__item { border-radius: 6px; overflow: hidden; }
-  .gallery__item--a { grid-column: span 3; grid-row: span 1.2; }
-  .gallery__item--b { grid-column: span 2; }
-  .gallery__item--c { grid-column: span 1; }
-  .gallery__item--d { grid-column: span 1; }
-  .gallery__item--e { grid-column: span 2; }
-  .gallery__item--f { grid-column: span 3; }
-  .gallery__item--g { grid-column: span 2; }
-  .gallery__item--h { grid-column: span 1; }
-  .gallery__item-cap { font-size: 0.8rem; bottom: 0.5rem; right: 0.5rem; left: 0.5rem; }
-  .gallery__item-cap small { font-size: 0.6rem; margin-bottom: 0.2rem; }
-  
-  .why__item { grid-template-columns: 50px 1fr; gap: 1rem; padding: 1.5rem 0; }
-  .why__item-num { font-size: 1.2rem; }
-  .why__item-title { font-size: 1rem; margin-bottom: 0.4rem; }
-  .why__item-desc { font-size: 0.85rem; line-height: 1.6; }
-  
-  .coverage__inner { gap: 2rem; }
-  .coverage__map { max-width: 100%; padding: 0; margin: 0 auto; }
-  .coverage__list { grid-template-columns: 1fr; gap: 0.5rem 1rem; }
-  .coverage__list li { font-size: 0.85rem; }
-  
-  .cta-banner { padding: 4rem 1rem; }
-  .cta-banner__title { font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 1rem; }
-  .cta-banner__sub { font-size: 0.9rem; margin: 1.5rem auto; }
-  .cta-banner__phones { gap: 1rem; margin-bottom: 1.5rem; }
-  .cta-banner__phone { min-width: 0; width: 100%; padding: 1rem 1.2rem; }
-  .cta-banner__phone-num { font-size: 1.5rem; }
-  .cta-banner__phone-label { font-size: 0.65rem; }
-  
-  .footer { padding: 3rem 1rem 1.5rem; }
-  .footer__grid { grid-template-columns: 1fr; gap: 1.5rem; }
-  .footer__brand-name { font-size: 1.3rem; }
-  .footer__col-title { font-size: 0.7rem; margin-bottom: 1rem; }
-  .footer__list a, .footer__list span { font-size: 0.8rem; }
-  .footer__phone { font-size: 1rem; }
-  .footer__bottom { flex-direction: column; }
-  
-  .float-call__btn { width: 46px; height: 46px; }
-  .float-call__btn svg { width: 20px; height: 20px; }
-}
-
-@media (max-width: 768px) and (min-width: 481px) {
-  .hero__visual { height: 50vh; min-height: 350px; }
-  .gallery__grid { grid-template-columns: repeat(6, 1fr); grid-auto-rows: 120px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-  .hero__slide img { transition: none !important; transform: none !important; }
-  .hero__badge-ring { animation: none; }
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .fade-up{opacity:1;transform:none}
 }
 </style>
 </head>
 <body>
 
-===== Navigation =====
+<!-- NAV -->
 <nav class="nav" id="nav">
-  <a href="#hero" class="nav__logo">
-      المحمدي
-
-    </span>
-  </a>
-  <div class="nav__links">
-    <a href="#services" class="nav__link">خدماتنا</a>
-    <a href="#process" class="nav__link">آلية العمل</a>
-    <a href="#gallery" class="nav__link">أعمالنا</a>
-    <a href="#why" class="nav__link">لماذا نحن</a>
-    <a href="#coverage" class="nav__link">مناطق التغطية</a>
-  </div>
-  <a href="tel:0582717472" class="nav__phone">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-    </svg>
-    <span>0582717472</span>
-  </a>
-  <div class="nav__burger" id="burger">
-    <span></span><span></span><span></span>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="nav-logo-icon">م</div>
+      <div class="nav-logo-text">المحمدي<small>نقل العفش والأثاث</small></div>
+    </a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">من نحن</a>
+      <a href="#services" class="nav-link">خدماتنا</a>
+      <a href="#process" class="nav-link">كيف نعمل</a>
+      <a href="#gallery" class="nav-link">أعمالنا</a>
+      <a href="#coverage" class="nav-link">تغطيتنا</a>
+    </div>
+    <a href="tel:0582717472" class="nav-cta"><i class="fas fa-phone-alt"></i> 0582717472</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
   </div>
 </nav>
 
-<!-- ===== Mobile Menu ===== -->
-<div class="nav__mobile-menu" id="mobileMenu">
-  <button class="nav__mobile-close" id="mobileClose" aria-label="إغلاق القائمة">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M18 6L6 18M6 6l12 12"/>
-    </svg>
-  </button>
-  <a href="#services" class="nav__mobile-link">خدماتنا</a>
-  <a href="#process" class="nav__mobile-link">آلية العمل</a>
-  <a href="#gallery" class="nav__mobile-link">أعمالنا</a>
-  <a href="#why" class="nav__mobile-link">لماذا نحن</a>
-  <a href="#coverage" class="nav__mobile-link">مناطق التغطية</a>
-  <a href="tel:0582717472" class="nav__mobile-phone">اتصل الآن: 0582717472</a>
-  <a href="tel:0577801602" class="nav__mobile-phone">اتصل ثاني: 0577801602</a>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+  <a href="#about">من نحن</a>
+  <a href="#services">خدماتنا</a>
+  <a href="#process">كيف نعمل</a>
+  <a href="#gallery">أعمالنا</a>
+  <a href="#coverage">تغطيتنا</a>
+  <a href="tel:0582717472" class="mobile-phone"><i class="fas fa-phone-alt"></i> 0582717472</a>
+  <a href="tel:0577801602" class="mobile-phone"><i class="fas fa-phone-alt"></i> 0577801602</a>
 </div>
 
-<!-- ===== Hero ===== -->
+<!-- HERO -->
 <section class="hero" id="hero">
-  <div class="hero__bg">
-    <div class="hero__slider" id="heroSlider">
-      <div class="hero__slide is-active" data-slide="0">
-        <img src="https://z-cdn-media.chatglm.cn/files/e0bf1f85-178d-4710-8a3c-ba3991c9fc5c.png?auth_key=1881853001-39eb6884304e4a60b899c72e1e607a73-0-bbcb7e4fe2305947ececbfb3347be0cb" alt="فريق المحمدي لنقل العفش أثناء تحميل أثاث مغلف بعناية">
-      </div>
-      <div class="hero__slide" data-slide="1">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.38.56 AM.jpeg" alt="نقل عفش بالشاحنات">
-      </div>
-      <div class="hero__slide" data-slide="2">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.38.57 AM.jpeg" alt="فك وتركيب غرف نوم">
-      </div>
-      <div class="hero__slide" data-slide="3">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.39.10 AM.jpeg" alt="تغليف الأثاث والأجهزة">
-      </div>
-      <div class="hero__slide" data-slide="4">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.39.12 AM.jpeg" alt="نقل المكاتب والشركات">
-      </div>
-    </div>
-    <div class="hero__slider-dots" id="heroDots"></div>
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?w=1920&q=80" alt="شاحنة نقل عفش">
   </div>
-
-
-  <div class="hero__inner">
-    <div></div>
-    <div class="hero__content">
-      <div class="hero__eyebrow" id="hero-eyebrow">
-        <span>القصيم · بريدة · داخل وخارج المنطقة</span>
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-star"></i> أكثر من 12 سنة خبرة في القصيم</div>
+    <h1 class="hero-title">المحمدي لنقل <span>العفش والأثاث</span><br>يد أمينة على ما تملك</h1>
+    <p class="hero-desc">نقل احترافي للمنازل والشركات داخل القصيم وخارجها — فك وتركيب، تغليف محكم، عمالة مدربة، وضمان مكتوب على كل قطعة.</p>
+    <div class="hero-btns">
+      <a href="tel:0582717472" class="btn btn-primary"><i class="fas fa-phone-alt"></i> اتصل الآن</a>
+      <a href="#services" class="btn btn-white"><i class="fas fa-arrow-down"></i> تعرف على خدماتنا</a>
+    </div>
+    <div class="hero-phones">
+      <div class="hero-phone">
+        <i class="fas fa-phone-alt"></i>
+        <div><a href="tel:0582717472">0582717472</a><small>الرقم الأول</small></div>
       </div>
-      <h1 class="hero__title" id="hero-title">
-        المحمدي لنقل العفش والأثاث
-        <em>يدٌ أمينة على ما تملك</em>
-      </h1>
-      <p class="hero__sub" id="hero-sub">
-        نقلٌ احترافي للأثاث داخل القصيم وخارجها، يقوم على فكٍّ وتركيبٍ دقيق، وتغليفٍ محكم، وعمّالٍ مدرّبين يعرفون قيمة كل قطعة. خدمة سريعة، أمان كامل، وضمانٌ على كل ما ننقل.
-      </p>
-      <div class="hero__ctas" id="hero-cta">
-        <a href="tel:0582717472" class="btn btn--primary">
-          <span>اتصل الآن</span>
-          <span class="btn__arrow">←</span>
-        </a>
-        <a href="#services" class="btn btn--ghost">
-          <span>تصفّح خدماتنا</span>
-        </a>
+      <div class="hero-phone">
+        <i class="fas fa-phone-alt"></i>
+        <div><a href="tel:0577801602">0577801602</a><small>الرقم الثاني</small></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== Intro / About ===== -->
-<section class="section intro" id="about" data-reveal>
-  <div class="container">
-    <div class="intro__grid">
-      <div class="intro__text">
-        <div class="eyebrow"><span>عن الشركة</span></div>
-        <h2 class="section-title">أكثرُ من عشر سنوات<br>في خدمة العائلات والشركات</h2>
-        <div class="intro__paragraphs" data-stagger>
-          <p>بدأت "المحمدي" كورشة صغيرة لفكّ وتركيب الأثاث في بريدة، ومع السنوات اتسع العمل ليشمل نقل العفش داخلياً وخارجياً، بأدواتٍ حديثة وسياراتٍ مجهّزة بعناية. لم نتوسّع على حساب التفاصيل — بل بقينا على المبدأ نفسه: نُعامل كل قطعة كأنها لنا.</p>
-          <p>اليوم، يمرّ عبر أيدينا يومياً عشرات المنازل والمكاتب، نُغلف، نفكّ، نُحمّل، ونُركّب — وكل خطوة يقوم بها عمّالٌ مدرّبون، تحت إشراف ميداني، وضمانٍ مكتوب. لا نُساوم على الأمان، ولا على المواعيد.</p>
-          <p>نخدم القصيم كاملةً: بريدة، عنيزة، الرس، المذنب، البكيرية، الأسياح، رياض الخبراء، النبهانية، وحتى خارج المنطقة حين يحتاج العميل رحلةً أطول بمستوى الخدمة نفسه.</p>
-        </div>
-        <div class="intro__signature">
-          <div>
-            <div class="intro__signature-name">عبدالله المحمدي</div>
-            <div class="intro__signature-role">المدير العام</div>
-          </div>
-        </div>
-      </div>
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item fade-up"><div class="stat-num">12<span>+</span></div><div class="stat-label">سنة خبرة</div></div>
+    <div class="stat-item fade-up d1"><div class="stat-num">8500<span>+</span></div><div class="stat-label">عملية نقل ناجحة</div></div>
+    <div class="stat-item fade-up d2"><div class="stat-num">24</div><div class="stat-label">عامل مدرب</div></div>
+    <div class="stat-item fade-up d3"><div class="stat-num">100<span>٪</span></div><div class="stat-label">ضمان على كل قطعة</div></div>
+  </div>
+</div>
 
-      <div class="intro__stats">
-        <div class="intro__stat">
-          <div class="intro__stat-num">12<span class="intro__stat-suffix">+</span></div>
-          <div class="intro__stat-label">سنة من الخبرة الميدانية</div>
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img fade-up">
+        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80" alt="فريق المحمدي أثناء العمل">
+        <div class="about-img-badge"><strong>12+</strong><small>سنة في الخدمة</small></div>
+      </div>
+      <div class="about-text">
+        <div class="section-label"><i class="fas fa-building"></i> من نحن</div>
+        <h2 class="fade-up">أكثر من عشر سنوات في خدمة <span>أهالي القصيم</span></h2>
+        <p class="fade-up d1">بدأت المحمدي كورشة صغيرة لفك وتركيب الأثاث في بريدة، ومع السنوات اتسع العمل ليشمل نقل العفش داخلياً وخارجياً بأدوات حديثة وسيارات مجهزة بعناية.</p>
+        <p class="fade-up d2">اليوم نخدم يومياً عشرات المنازل والمكاتب — نغلف، نفك، نحمل، ونركب. كل خطوة يقوم بها عمال مدربون تحت إشراف ميداني وضمان مكتوب.</p>
+        <div class="about-features fade-up d3">
+          <div class="about-feat"><i class="fas fa-check"></i> عمالة مدربة ومختبرة</div>
+          <div class="about-feat"><i class="fas fa-check"></i> أسعار شفافة بدون مفاجآت</div>
+          <div class="about-feat"><i class="fas fa-check"></i> سيارات مجهزة ومغلقة</div>
+          <div class="about-feat"><i class="fas fa-check"></i> ضمان مكتوب على كل قطعة</div>
         </div>
-        <div class="intro__stat">
-          <div class="intro__stat-num">8500<span class="intro__stat-suffix">+</span></div>
-          <div class="intro__stat-label">عملية نقل ناجحة</div>
-        </div>
-        <div class="intro__stat">
-          <div class="intro__stat-num">24</div>
-          <div class="intro__stat-label">عاملًا مدرّبًا متفرغًا</div>
-        </div>
-        <div class="intro__stat">
-          <div class="intro__stat-num">100<span class="intro__stat-suffix">٪</span></div>
-          <div class="intro__stat-label">ضمان على كل ما ننقل</div>
+        <div class="about-sig fade-up d4">
+          <div class="about-sig-icon">ع</div>
+          <div>
+            <div class="about-sig-name">عبدالله المحمدي</div>
+            <div class="about-sig-role">المدير العام</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== Services ===== -->
-<section class="services" id="services">
-  <div class="services__header" data-reveal>
-    <div class="eyebrow"><span>ما الذي نُجيده</span></div>
-    <h2 class="section-title">خدماتٌ متكاملة لكل ما يثقل الباب</h2>
-    <p class="section-lead">من غرف النوم إلى المطابخ، ومن المكيفات إلى الشاشات والأجهزة الكهربائية — كل خدمة لها فريقها وأدواتها. مرّر للأسفل لترى كل بطاقة تُغطّي ما قبلها.</p>
-  </div>
-
-  <div class="services-stack" id="services-stack">
-    <div class="services-stack-pin" id="services-stack-pin">
-      <article class="service-card" data-card="0">
-        <div class="service-card__media">
-          <img src="img/WhatsApp Image 2026-06-19 at 9.38.56 AM.jpeg" alt="نقل عفش بالشاحنات">
-          <div class="service-card__index">01 / 07</div>
-        </div>
-        <div class="service-card__body">
-          <div class="service-card__num">01</div>
-          <div>
-            <div class="service-card__cat">خدمة الرئيسية</div>
-            <h3 class="service-card__title">نقل العفش والأثاث</h3>
-            <p class="service-card__desc">نقلٌ كامل للأثاث المنزلي والمكتبي داخل القصيم وخارجها، بسياراتٍ مجهّزة بوسائد حماية وأحزمة تثبيت، وسائقين يعرفون طرق المنطقة فرعاً فرعاً.</p>
-            <ul class="service-card__features">
-              <li>سيارات مغلقة ومغطاة</li>
-              <li>تثبيت الأثاث بالأحزمة</li>
-              <li>تأمين على البضائع المنقولة</li>
-              <li>متابعة ميدانية لكل رحلة</li>
-            </ul>
-          </div>
-          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
-        </div>
-      </article>
-
-      <article class="service-card" data-card="1">
-        <div class="service-card__media">
-          <img src="img/WhatsApp Image 2026-06-19 at 9.38.57 AM.jpeg" alt="فك وتركيب غرف نوم">
-          <div class="service-card__index">02 / 07</div>
-        </div>
-        <div class="service-card__body">
-          <div class="service-card__num">02</div>
-          <div>
-            <div class="service-card__cat">فك وتركيب</div>
-            <h3 class="service-card__title">غرف النوم والمجالس</h3>
-            <p class="service-card__desc">فكّ وتركيب غرف النوم بكل تفاصيلها — الكبتات، السرير، الطاولات، المرايا — مع ترقيم القطع ووضعها في أكياس مغلقة لضمان عودة تركيبها بأبعادها الأصلية.</p>
-            <ul class="service-card__features">
-              <li>ترقيم القطع قبل الفك</li>
-              <li>حفظ البراغي في أكياس</li>
-              <li>أدوات أصلية لكل نوع أثاث</li>
-              <li>إعادة تركيب مطابقة للأصل</li>
-            </ul>
-          </div>
-          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
-        </div>
-      </article>
-
-      <article class="service-card" data-card="2">
-        <div class="service-card__media">
-          <img src="img/WhatsApp Image 2026-06-19 at 9.38.58 AM.jpeg" alt="نقل وتركيب المطابخ">
-          <div class="service-card__index">03 / 07</div>
-        </div>
-        <div class="service-card__body">
-          <div class="service-card__num">03</div>
-          <div>
-            <div class="service-card__cat">فك وتركيب</div>
-            <h3 class="service-card__title">المطابخ والأجهزة المدمجة</h3>
-            <p class="service-card__desc">فكّ مطابخ الألمنيوم والخشب بأيدي نجارين متخصصين، مع ضمان إعادة التركيب بنفس المحاذاة. نتعامل مع الأجهزة المدمجة بعناية: الثلاجة، الفرن، الغسالة، الميكروويف.</p>
-            <ul class="service-card__features">
-              <li>نجارون متخصصون</li>
-              <li>حماية أسطح العمل</li>
-              <li>فك الأجهزة المدمجة بأمان</li>
-              <li>إعادة المحاذاة الأصلية</li>
-            </ul>
-          </div>
-          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
-        </div>
-      </article>
-
-      <article class="service-card" data-card="3">
-        <div class="service-card__media">
-          <img src="img/WhatsApp Image 2026-06-19 at 9.39.09 AM.jpeg" alt="فك وتركيب المكيفات">
-          <div class="service-card__index">04 / 07</div>
-        </div>
-        <div class="service-card__body">
-          <div class="service-card__num">04</div>
-          <div>
-            <div class="service-card__cat">فك وتركيب</div>
-            <h3 class="service-card__title">المكيفات السبليت والشباك</h3>
-            <p class="service-card__desc">فكّ وتركيب جميع أنواع المكيفات — سبليت، شباك، مخفي، كاسيت — بفنيين معتمدين. شفط الفريون قبل الفك، وإعادة الشحن بعد التركيب، مع اختبار التشغيل.</p>
-            <ul class="service-card__features">
-              <li>فنيون معتمدون</li>
-              <li>شفط الفريون قبل الفك</li>
-              <li>إعادة شحن وتشغيل</li>
-              <li>ضمان على التركيب</li>
-            </ul>
-          </div>
-          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
-        </div>
-      </article>
-
-      <article class="service-card" data-card="4">
-        <div class="service-card__media">
-          <img src="img/WhatsApp Image 2026-06-19 at 9.39.10 AM.jpeg" alt="تغليف الأثاث والأجهزة">
-          <div class="service-card__index">05 / 07</div>
-        </div>
-        <div class="service-card__body">
-          <div class="service-card__num">05</div>
-          <div>
-            <div class="service-card__cat">حماية وتغليف</div>
-            <h3 class="service-card__title">تغليف الأثاث والأجهزة الكهربائية</h3>
-            <p class="service-card__desc">تغليفٌ احترافي بـ: النايلون الفقاعي، الكراتين المقواة، الأغطية القماشية، والنايلون الشداد. كل قطعة تُغلّف حسب طبيعتها — الزجاج، الخشب، الإلكترونيات، التحف.</p>
-            <ul class="service-card__features">
-              <li>نايلون فقاعي مزدوج</li>
-              <li>كراتين مقواة للأطراف</li>
-              <li>أغطية قماش للأثاث الفاخر</li>
-              <li>تغليف خاص للتحف والأنتيكات</li>
-            </ul>
-          </div>
-          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
-        </div>
-      </article>
-
-      <article class="service-card" data-card="5">
-        <div class="service-card__media">
-          <img src="img/WhatsApp Image 2026-06-19 at 9.39.12 AM.jpeg" alt="نقل المكاتب والشركات">
-          <div class="service-card__index">06 / 07</div>
-        </div>
-        <div class="service-card__body">
-          <div class="service-card__num">06</div>
-          <div>
-            <div class="service-card__cat">خدمات الشركات</div>
-            <h3 class="service-card__title">نقل المكاتب والشركات</h3>
-            <p class="service-card__desc">نقلٌ كامل للمكاتب والإدارات — الأثاث المكتبي، الأجهزة، الملفات، السيرفرات — في عطلة نهاية الأسبوع لتقليل التوقف. خطة عمل مسبقة، وتسليمٌ مقسّم على مراحل.</p>
-            <ul class="service-card__features">
-              <li>تنفيذ في الإجازات</li>
-              <li>ترقيم الصناديق حسب القسم</li>
-              <li>خطط نقل مخصصة</li>
-              <li>تنسيق مع قسم IT</li>
-            </ul>
-          </div>
-          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
-        </div>
-      </article>
-
-      <article class="service-card" data-card="6">
-        <div class="service-card__media">
-          <img src="img/WhatsApp Image 2026-06-19 at 9.39.13 AM.jpeg" alt="فك وتركيب الستائر والشاشات">
-          <div class="service-card__index">07 / 07</div>
-        </div>
-        <div class="service-card__body">
-          <div class="service-card__num">07</div>
-          <div>
-            <div class="service-card__cat">لمسات أخيرة</div>
-            <h3 class="service-card__title">الستائر والشاشات والتفاصيل</h3>
-            <p class="service-card__desc">لأن البيت لا يكتمل بدونها — فكّ وتركيب الستائر بأنواعها، الشاشات الذكية، اللوحات، المرايا الكبيرة، والمعلقات. تركيبٌ بمستوى، وتسليمٌ جاهز للسكن.</p>
-            <ul class="service-card__features">
-              <li>ستائر رول، بلوك، كلاسيك</li>
-              <li>تركيب الشاشات على الجدار</li>
-              <li>تعليق اللوحات والمرايا</li>
-              <li>تسليم البيت جاهزاً</li>
-            </ul>
-          </div>
-          <a href="tel:0582717472" class="service-card__cta"><span>اطلب الخدمة</span><span>←</span></a>
-        </div>
-      </article>
+<!-- SERVICES -->
+<section class="section services" id="services">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label fade-up"><i class="fas fa-cogs"></i> خدماتنا</div>
+      <h2 class="section-title fade-up d1">خدمات متكاملة <span>لكل ما تحتاج</span></h2>
+      <p class="section-desc fade-up d2">من غرف النوم إلى المكيفات — كل خدمة لها فريقها وأدواتها المتخصصة</p>
     </div>
-  </div>
-</section>
-
-<!-- ===== Process ===== -->
-<section class="section process" id="process" data-reveal>
-  <div class="container">
-    <div class="process__head">
-      <div class="eyebrow"><span>آلية العمل</span></div>
-      <h2 class="section-title">من أول اتصال حتى آخر قطعة في مكانها</h2>
-      <p class="section-lead">خمس خطوات واضحة، لا مفاجآت فيها — تعرف في كل لحظة ما الذي يحدث، ومن المسؤول، ومتى ينتهي.</p>
-    </div>
-
-    <div class="process__grid" data-stagger>
-      <div class="process__step"><div class="process__num">1</div><h3 class="process__step-title">تواصل واستفسار</h3><p class="process__step-desc">اتصالٌ أو واتساب — نأخذ منك تفاصيل المنزل، عدد الغرف، الأثاث، الوجهة. نسجّل كل شيء بدقة.</p></div>
-      <div class="process__step"><div class="process__num">2</div><h3 class="process__step-title">الكشف والتسعير</h3><p class="process__step-desc">نزور الموقع إن لزم، أو نقدّم سعراً نهائياً مكتوباً بناءً على التفاصيل. لا رسوم خفية، لا زيادات لاحقة.</p></div>
-      <div class="process__step"><div class="process__num">3</div><h3 class="process__step-title">الفك والتغليف</h3><p class="process__step-desc">يصل الفريق في الموعد — يفكّ الأثاث، يُغلّف القطع، يرقّم الصناديق. أنت تراقب، ولا تعمل.</p></div>
-      <div class="process__step"><div class="process__num">4</div><h3 class="process__step-title">النقل الآمن</h3><p class="process__step-desc">تحميلٌ بالأحزمة، تثبيتٌ بالوسائد، سائقٌ يعرف الطريق. الرحلة مغطاة بالضمان من الباب إلى الباب.</p></div>
-      <div class="process__step"><div class="process__num">5</div><h3 class="process__step-title">التركيب والترتيب</h3><p class="process__step-desc">إعادة تركيب الأثاث في أماكنه، تعليق الستائر والشاشات، إزالة مخلفات التغليف. تسلم بيتاً جاهزاً.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Gallery ===== -->
-<section class="section gallery" id="gallery" data-reveal>
-  <div class="container">
-    <div class="gallery__head">
-      <div class="gallery__head-text">
-        <div class="eyebrow"><span>من أعمالنا</span></div>
-        <h2 class="section-title">صورٌ من الميدان</h2>
-        <p class="section-lead">لقطات من رحلات نقل فعلية — توضّح كيف نُغلف، كيف نُحمّل، وكيف نُسلّم.</p>
+    <div class="services-grid">
+      <div class="svc-card fade-up">
+        <div class="svc-card-img">
+          <div class="svc-card-num">01</div>
+          <img src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?w=600&q=80" alt="نقل العفش">
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-cat">الخدمة الرئيسية</div>
+          <h3 class="svc-card-title">نقل العفش والأثاث</h3>
+          <p class="svc-card-desc">نقل كامل للأثاث المنزلي والمكتبي بسيارات مجهزة بأحزمة تثبيت ووسائد حماية داخل القصيم وخارجها.</p>
+          <a href="tel:0582717472" class="svc-card-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
       </div>
-      <div class="gallery__head-meta">+ 8500 عملية منذ 2014</div>
-    </div>
-
-    <div class="gallery__grid" data-stagger>
-      <div class="gallery__item gallery__item--a">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.38.56 AM (1).jpeg" alt="فريق نقل على السلم">
-        <div class="gallery__item-cap"><small>العملية #4218</small>نقل أثاث طابقين — بريدة</div>
+      <div class="svc-card fade-up d1">
+        <div class="svc-card-img">
+          <div class="svc-card-num">02</div>
+          <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80" alt="غرف النوم">
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-cat">فك وتركيب</div>
+          <h3 class="svc-card-title">غرف النوم والمجالس</h3>
+          <p class="svc-card-desc">فك وتركيب غرف النوم بترقيم القطع وحفظ البراغي في أكياس مغلقة لضمان التركيب المطابق للأصل.</p>
+          <a href="tel:0582717472" class="svc-card-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
       </div>
-      <div class="gallery__item gallery__item--b">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.38.57 AM.jpeg" alt="تحميل أريكة مغلفة">
-        <div class="gallery__item-cap"><small>العملية #4189</small>تغليف أريكة فاخرة — عنيزة</div>
+      <div class="svc-card fade-up d2">
+        <div class="svc-card-img">
+          <div class="svc-card-num">03</div>
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="المطابخ">
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-cat">فك وتركيب</div>
+          <h3 class="svc-card-title">المطابخ والأجهزة المدمجة</h3>
+          <p class="svc-card-desc">فك مطابخ الألمنيوم والخشب بحذر مع فصل الفرن والغسالة وغسالة الصحون وإعادة تركيبها.</p>
+          <a href="tel:0582717472" class="svc-card-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
       </div>
-      <div class="gallery__item gallery__item--c">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.38.58 AM (1).jpeg" alt="تغليف غرفة نوم">
-        <div class="gallery__item-cap"><small>العملية #4175</small>غرفة نوم</div>
+      <div class="svc-card fade-up d3">
+        <div class="svc-card-img">
+          <div class="svc-card-num">04</div>
+          <img src="https://images.unsplash.com/photo-1631545806609-d2fc67bcc13f?w=600&q=80" alt="المكيفات">
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-cat">فك وتركيب</div>
+          <h3 class="svc-card-title">المكيفات السبليت</h3>
+          <p class="svc-card-desc">فنيون متخصصون في فك وتركيب المكيفات بأنواعها مع تفريغ وشحن الفريون وضمان على التركيب.</p>
+          <a href="tel:0582717472" class="svc-card-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
       </div>
-      <div class="gallery__item gallery__item--d">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.39.09 AM.jpeg" alt="تغليف مطبخ">
-        <div class="gallery__item-cap"><small>العملية #4163</small>مطبخ ألمنيوم</div>
+      <div class="svc-card fade-up d4">
+        <div class="svc-card-img">
+          <div class="svc-card-num">05</div>
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="التغليف">
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-cat">تغليف</div>
+          <h3 class="svc-card-title">التغليف الاحترافي</h3>
+          <p class="svc-card-desc">بطانيات سميكة ولفائف بلاستيكية وكرتون مقوى ووسائد هوائية للشاشات — حسب نوع القطعة.</p>
+          <a href="tel:0582717472" class="svc-card-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
       </div>
-      <div class="gallery__item gallery__item--e">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.39.10 AM.jpeg" alt="تحميل الشاحنة">
-        <div class="gallery__item-cap"><small>العملية #4151</small>تحميل الشاحنة — الرس</div>
-      </div>
-      <div class="gallery__item gallery__item--f">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.39.12 AM (1).jpeg" alt="نقل مكتب">
-        <div class="gallery__item-cap"><small>العملية #4138</small>نقل مقر شركة — بريدة</div>
-      </div>
-      <div class="gallery__item gallery__item--g">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.39.12 AM.jpeg" alt="تركيب مكيف">
-        <div class="gallery__item-cap"><small>العملية #4126</small>تركيب سبليت</div>
-      </div>
-      <div class="gallery__item gallery__item--h">
-        <img src="img/WhatsApp Image 2026-06-19 at 9.39.13 AM (1).jpeg" alt="تركيب ستائر">
-        <div class="gallery__item-cap"><small>العملية #4118</small>تركيب ستائر كلاسيك — المذنب</div>
+      <div class="svc-card fade-up d5">
+        <div class="svc-card-img">
+          <div class="svc-card-num">06</div>
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="نقل مكاتب">
+        </div>
+        <div class="svc-card-body">
+          <div class="svc-card-cat">قطاع خاص</div>
+          <h3 class="svc-card-title">نقل المكاتب والشركات</h3>
+          <p class="svc-card-desc">نقل منظم للمكاتب والمؤسسات مع جدولة زمنية مرنة لا تعطل العمل أكثر من اللازم.</p>
+          <a href="tel:0582717472" class="svc-card-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== Why us ===== -->
-<section class="section why" id="why" data-reveal>
-  <div class="container">
-    <div class="why__grid">
-      <div class="why__head">
-        <div class="eyebrow"><span>لماذا المحمدي</span></div>
-        <h2 class="section-title">ستة أسباب تجعلنا الخيار الأول</h2>
-        <p class="section-lead">لا نقول إننا الأفضل — نقول إننا نُقدّم سبباً واضحاً وراء كل ميزة. اختر السبب الذي يهمّك أكثر.</p>
+<!-- PROCESS -->
+<section class="section process" id="process">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label fade-up"><i class="fas fa-route"></i> آلية العمل</div>
+      <h2 class="section-title fade-up d1">خمس خطوات من <span>طلبك لراحتك</span></h2>
+      <p class="section-desc fade-up d2">كل خطوة محسوبة ومتابعة من لحظة اتصالك حتى آخر قطعة مركبة في مكانها</p>
+    </div>
+    <div class="process-grid">
+      <div class="step fade-up">
+        <div class="step-icon"><i class="fas fa-phone-alt"></i></div>
+        <div class="step-num">01</div>
+        <div class="step-title">اتصالك</div>
+        <div class="step-desc">تتصل بنا وتخبرنا بعدد الغرف ونوع الأثاث</div>
       </div>
-
-      <ol class="why__list" data-stagger>
-        <li class="why__item"><div class="why__item-num">01<small>السرعة</small></div><div><h3 class="why__item-title">خدمة سريعة، عمالة مدرّبة</h3><p class="why__item-desc">فريقنا مُدرّب على إتمام العمل في الوقت المتفق عليه — لا تأخير، لا تمدد. عمّال يعرفون تسلسل العمل ولا يتعلمون على حساب وقتك.</p></div></li>
-        <li class="why__item"><div class="why__item-num">02<small>الأمان</small></div><div><h3 class="why__item-title">تحميل وتنزيل باحترافية</h3><p class="why__item-desc">أحزمة تثبيت، وسائد حماية، طرق تحميل مدروسة. الأثاث لا يُحمّل عشوائياً، بل يُرتّب في الشاحنة بحسب الوزن والهشاشة.</p></div></li>
-        <li class="why__item"><div class="why__item-num">03<small>الانتشار</small></div><div><h3 class="why__item-title">نخدمك أينما كنت</h3><p class="why__item-desc">داخل القصيم: بريدة، عنيزة، الرس، المذنب، البكيرية، الأسياح. وخارجها حين تحتاج رحلةً أطول بنفس المستوى.</p></div></li>
-        <li class="why__item"><div class="why__item-num">04<small>الضمان</small></div><div><h3 class="why__item-title">ضمانٌ مكتوب على كل ما ننقل</h3><p class="why__item-desc">عقد يحدد المسؤولية، وضمان يغطي أي ضرر غير متوقع. لسنا شركة تختفي بعد التسليم — نحن هنا بعد الرحلة كما قبلها.</p></div></li>
-        <li class="why__item"><div class="why__item-num">05<small>الشفافية</small></div><div><h3 class="why__item-title">تسعيرٌ نهائي مُسبق</h3><p class="why__item-desc">السعر الذي تسمعه أول مرة هو السعر الذي تدفعه. لا رسوم إضافية لـ"السلالم"، لا مفاجآت لـ"المسافة". كل شيء مكتوب.</p></div></li>
-        <li class="why__item"><div class="why__item-num">06<small>الخبرة</small></div><div><h3 class="why__item-title">أكثر من 12 سنة في الميدان</h3><p class="why__item-desc">عشرات المنازل يومياً، آلاف العمليات سنوياً، أخطاءٌ قلّمنا وحلولٌ متراكمة. كل سنة خبرة تعني عمليةٌ أكثر سلاسة لك.</p></div></li>
-      </ol>
+      <div class="step fade-up d1">
+        <div class="step-icon"><i class="fas fa-search-dollar"></i></div>
+        <div class="step-num">02</div>
+        <div class="step-title">الكشف والسعر</div>
+        <div class="step-desc">نحدد موعد كشف إن لزم ونُعطيك سعراً نهائياً واضحاً</div>
+      </div>
+      <div class="step fade-up d2">
+        <div class="step-icon"><i class="fas fa-box"></i></div>
+        <div class="step-num">03</div>
+        <div class="step-title">التغليف والفك</div>
+        <div class="step-desc">نغلف كل قطعة بعناية ثم نفك الأثاث المُجمّع</div>
+      </div>
+      <div class="step fade-up d3">
+        <div class="step-icon"><i class="fas fa-truck-loading"></i></div>
+        <div class="step-num">04</div>
+        <div class="step-title">التحميل والنقل</div>
+        <div class="step-desc">تحميل بأحزمة تثبيت ونقل بأقصر طريق آمن</div>
+      </div>
+      <div class="step fade-up d4">
+        <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="step-num">05</div>
+        <div class="step-title">التنزيل والتركيب</div>
+        <div class="step-desc">ننزل ونركب كل شيء ونترك المكان جاهزاً</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===== Coverage ===== -->
-<section class="section coverage" id="coverage" data-reveal>
-  <div class="container">
-    <div class="coverage__inner">
-      <div class="coverage__map">
-        <iframe src="https://maps.google.com/maps?q=Al%20Qassim%20Saudi%20Arabia&t=&z=7&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- GALLERY -->
+<section class="section gallery" id="gallery">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label fade-up"><i class="fas fa-images"></i> أعمالنا</div>
+      <h2 class="section-title fade-up d1">صور حقيقية من <span>مواقع العمل</span></h2>
+      <p class="section-desc fade-up d2">هذه لقطات فعلية من مواقع النقل خلال الأشهر الماضية — لا صور استوديو</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gal-item gal-1 fade-up">
+        <img src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?w=800&q=80" alt="شاحنة نقل مجهزة">
+        <div class="gal-item-cap"><small>الأسطول</small><span>شاحنات مجهزة لنقل آمن</span></div>
       </div>
-
-      <div class="coverage__text">
-        <div class="eyebrow"><span>مناطق التغطية</span></div>
-        <h2 class="section-title">نُغطّي القصيم<br>وما حولها بالكامل</h2>
-        <p class="section-lead">من بريدة مركزاً رئيسياً، تنطلق فرقنا يومياً إلى كل محافظات القصيم. وحين تستدعي الحاجة، نُكمل الرحلة خارج المنطقة — إلى الرياض، حائل، المدينة، وحيثما كنت.</p>
-        <ul class="coverage__list">
-          <li>بريدة</li><li>عنيزة</li><li>الرس</li><li>المذنب</li>
-          <li>البكيرية</li><li>الأسياح</li><li>رياض الخبراء</li><li>النبهانية</li>
-          <li>البدائع</li><li>حائل</li><li>الرياض</li><li>خارج المنطقة</li>
-        </ul>
+      <div class="gal-item gal-2 fade-up d1">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&q=80" alt="تحميل صناديق">
+        <div class="gal-item-cap"><small>التحميل</small><span>فريق مدرب</span></div>
+      </div>
+      <div class="gal-item gal-3 fade-up d2">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=400&q=80" alt="مواد تغليف">
+        <div class="gal-item-cap"><small>التغليف</small><span>مواد مقواة</span></div>
+      </div>
+      <div class="gal-item gal-4 fade-up d3">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&q=80" alt="تركيب أثاث">
+        <div class="gal-item-cap"><small>التركيب</small><span>دقة في التفاصيل</span></div>
+      </div>
+      <div class="gal-item gal-5 fade-up d4">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="توصيل أثاث">
+        <div class="gal-item-cap"><small>التوصيل</small><span>وصول آمن</span></div>
+      </div>
+      <div class="gal-item gal-6 fade-up d5">
+        <img src="https://images.unsplash.com/photo-1631545806609-d2fc67bcc13f?w=400&q=80" alt="مكيف سبليت">
+        <div class="gal-item-cap"><small>المكيفات</small><span>فك وتركيب</span></div>
+      </div>
+      <div class="gal-item gal-7 fade-up d6">
+        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=400&q=80" alt="غرفة بعد التركيب">
+        <div class="gal-item-cap"><small>النتيجة</small><span>كالأصل تماماً</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== CTA Banner ===== -->
-<section class="cta-banner" id="contact" data-reveal>
-  <div class="cta-banner__inner">
-    <div class="cta-banner__eyebrow"><span>جاهزون لخدمتك</span></div>
-    <h2 class="cta-banner__title">اتصل الآن، واحصل على <em>تسعيرٍ نهائي</em><br>في أقل من ساعة</h2>
-    <p class="cta-banner__sub">لا رسوم على الاستفسار، لا التزام قبل الاتفاق. مجرد مكالمة تعرف فيها كل التفاصيل: السعر، الموعد، حجم الفريق، نوع الشاحنة.</p>
+<!-- WHY US -->
+<section class="section why" id="why">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label fade-up"><i class="fas fa-award"></i> لماذا نحن</div>
+      <h2 class="section-title fade-up d1">خمسة أسباب تجعل <span>المحمدي خيارك الأول</span></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-list">
+        <div class="why-item fade-up">
+          <div class="why-icon o"><i class="fas fa-shield-alt"></i></div>
+          <div>
+            <div class="why-item-title">ضمان مكتوب على كل قطعة</div>
+            <div class="why-item-desc">نصدر ضماناً خطياً يغطي أي تلف يحدث أثناء النقل — من الخدش إلى الكسر — ونتحمل المسؤولية كاملة دون تأخير.</div>
+          </div>
+        </div>
+        <div class="why-item fade-up d1">
+          <div class="why-icon b"><i class="fas fa-clock"></i></div>
+          <div>
+            <div class="why-item-title">التزام بالمواعيد دون تأخير</div>
+            <div class="why-item-desc">نحدد معك ساعة الوصول بدقة ونعمل بفريق كامل ينهي المهمة في أقل وقت ممكن دون المساس بالجودة أو الأمان.</div>
+          </div>
+        </div>
+        <div class="why-item fade-up d2">
+          <div class="why-icon g"><i class="fas fa-tools"></i></div>
+          <div>
+            <div class="why-item-title">أدوات وأسطول متجدد باستمرار</div>
+            <div class="why-item-desc">نستبدل الأدوات التالفة فوراً ونضيف سيارات جديدة عند الحاجة — لأن الأداة الجيدة نصف العمل.</div>
+          </div>
+        </div>
+        <div class="why-item fade-up d3">
+          <div class="why-icon o"><i class="fas fa-users"></i></div>
+          <div>
+            <div class="why-item-title">عمالة مدربة ومعروفة</div>
+            <div class="why-item-desc">كل عامل في فريقنا مدرب على التعامل مع أنواع الأثاث المختلفة ويخضع لتقييم دوري. لا نستعين بعمالة مؤقتة.</div>
+          </div>
+        </div>
+        <div class="why-item fade-up d4">
+          <div class="why-icon b"><i class="fas fa-money-bill-wave"></i></div>
+          <div>
+            <div class="why-item-title">أسعار شفافة بدون مفاجآت</div>
+            <div class="why-item-desc">السعر الذي تتفق عليه هو السعر النهائي — لا رسوم مخفية ولا زيادات مفاجئة. نعطيك تفصيلاً واضحاً قبل البدء.</div>
+          </div>
+        </div>
+      </div>
+      <div class="why-side fade-up d2">
+        <div class="why-side-img">
+          <img src="https://images.unsplash.com/photo-1603796846097-bee99e4a601f?w=600&q=80" alt="فريق العمل">
+        </div>
+        <div class="why-side-trust">
+          <div class="trust-card">
+            <i class="fas fa-star"></i>
+            <strong>تقييم ممتاز</strong>
+            <small>من عملائنا السابقين</small>
+          </div>
+          <div class="trust-card">
+            <i class="fas fa-redo"></i>
+            <strong>عملاء متكررون</strong>
+            <small>أكثر من 60% يعودون لنا</small>
+          </div>
+          <div class="trust-card">
+            <i class="fas fa-map-marked-alt"></i>
+            <strong>تغطية شاملة</strong>
+            <small>القصيم وكل المملكة</small>
+          </div>
+          <div class="trust-card">
+            <i class="fas fa-headset"></i>
+            <strong>دعم متواصل</strong>
+            <small>7 أيام في الأسبوع</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="cta-banner__phones">
-      <a href="tel:0582717472" class="cta-banner__phone">
-        <div class="cta-banner__phone-label">الاتصال الأول</div>
-        <div class="cta-banner__phone-num">0582717472</div>
+<!-- COVERAGE -->
+<section class="section coverage" id="coverage">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label fade-up"><i class="fas fa-map-marker-alt"></i> تغطيتنا</div>
+      <h2 class="section-title fade-up d1">نخدم القصيم كاملةً <span>وخارجها</span></h2>
+      <p class="section-desc fade-up d2">أسطولنا يغطي جميع مدن وقرى المنطقة مع إمكانية النقل لجميع مدن المملكة</p>
+    </div>
+    <div class="coverage-grid">
+      <div class="coverage-map fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92516.62154188688!2d43.93!3d26.32!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2e0341e8f4e9a1%3A0x8c6e5e5e5e5e5e5e5!2sBuraidah%20Saudi%20Arabia!5e0!3m2!1sar!2ssa!4v1700000000000!5m2!1sar!2ssa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="خريطة التغطية"></iframe>
+      </div>
+      <div class="fade-up d2">
+        <h3 style="font-family:var(--font-h);font-size:1.5rem;font-weight:700;margin-bottom:.5rem;color:var(--text)">المدن التي نخدمها</h3>
+        <p style="color:var(--text2);font-size:.95rem;margin-bottom:1rem">نصل إليك أينما كنت في منطقة القصيم أو خارجها</p>
+        <div class="coverage-cities">
+          <div class="city"><i class="fas fa-map-pin"></i> بريدة</div>
+          <div class="city"><i class="fas fa-map-pin"></i> عنيزة</div>
+          <div class="city"><i class="fas fa-map-pin"></i> الرس</div>
+          <div class="city"><i class="fas fa-map-pin"></i> المذنب</div>
+          <div class="city"><i class="fas fa-map-pin"></i> البكيرية</div>
+          <div class="city"><i class="fas fa-map-pin"></i> الأسياح</div>
+          <div class="city"><i class="fas fa-map-pin"></i> رياض الخبراء</div>
+          <div class="city"><i class="fas fa-map-pin"></i> النبهانية</div>
+          <div class="city"><i class="fas fa-map-pin"></i> عقلة الصقور</div>
+          <div class="city"><i class="fas fa-map-pin"></i> الشماسية</div>
+          <div class="city"><i class="fas fa-map-pin"></i> الرياض</div>
+          <div class="city"><i class="fas fa-map-pin"></i> جميع مدن المملكة</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-inner">
+    <div class="cta-label"><i class="fas fa-bolt"></i> جاهز تنقل؟</div>
+    <h2 class="cta-title">اتصلنا الآن وخلّص أمورك <span>بهدوء</span></h2>
+    <p class="cta-desc">رقمان مباشران يردون عليك من الساعة سبعة صباحاً حتى منتصف الليل — اسأل، استفسر، واحجز موعدك</p>
+    <div class="cta-phones">
+      <a href="tel:0582717472" class="cta-phone">
+        <small>الرقم الأول</small>
+        0582717472
       </a>
-      <a href="tel:0577801602" class="cta-banner__phone">
-        <div class="cta-banner__phone-label">الاتصال الثاني</div>
-        <div class="cta-banner__phone-num">0577801602</div>
+      <a href="tel:0577801602" class="cta-phone">
+        <small>الرقم الثاني</small>
+        0577801602
       </a>
     </div>
-
-    <div class="cta-banner__hours"><strong>متاح يومياً:</strong> من 7 صباحاً حتى 12 منتصف الليل — طوارئ خارج الدوام بطلب مسبق</div>
+    <div class="cta-hours">ساعات العمل: <strong>7:00 صباحاً — 12:00 منتصف الليل</strong> · سبعة أيام في الأسبوع</div>
   </div>
 </section>
 
-<!-- ===== Footer ===== -->
+<!-- FOOTER -->
 <footer class="footer">
-  <div class="footer__inner">
-    <div class="footer__grid">
+  <div class="footer-inner">
+    <div class="footer-grid">
       <div>
-        <div class="footer__brand-name">المحمدي<small>نقل العفش والأثاث</small></div>
-        <p class="footer__brand-desc">شركة سعودية متخصصة في نقل العفش والأثاث داخل القصيم وخارجها. فك، تركيب، تغليف، نقل مكيفات، نقل مطابخ، نقل مكاتب — بضمان كامل وعمّال مدرّبين.</p>
+        <div class="footer-brand">المحمدي<small>نقل العفش والأثاث بالقصيم</small></div>
+        <p class="footer-desc">أكثر من 12 سنة في خدمة أهالي القصيم — نقل آمن، فك وتركيب دقيق، تغليف محكم، وضمان مكتوب على كل قطعة.</p>
       </div>
-
-      <div>
-        <div class="footer__col-title">روابط</div>
-        <ul class="footer__list">
-          <li><a href="#about">عن الشركة</a></li>
-          <li><a href="#services">خدماتنا</a></li>
-          <li><a href="#process">آلية العمل</a></li>
-          <li><a href="#gallery">أعمالنا</a></li>
-          <li><a href="#coverage">مناطق التغطية</a></li>
-        </ul>
+      <div class="footer-col">
+        <div class="footer-col-title">خدماتنا</div>
+        <a href="#services">نقل العفش والأثاث</a>
+        <a href="#services">فك وتركيب غرف النوم</a>
+        <a href="#services">فك وتركيب المطابخ</a>
+        <a href="#services">فك وتركيب المكيفات</a>
+        <a href="#services">التغليف الاحترافي</a>
+        <a href="#services">نقل المكاتب والشركات</a>
       </div>
-
-      <div>
-        <div class="footer__col-title">خدماتنا</div>
-        <ul class="footer__list">
-          <li><a href="#services">نقل عفش وأثاث</a></li>
-          <li><a href="#services">فك وتركيب غرف نوم</a></li>
-          <li><a href="#services">فك وتركيب مطابخ</a></li>
-          <li><a href="#services">فك وتركيب مكيفات</a></li>
-          <li><a href="#services">تغليف الأثاث</a></li>
-          <li><a href="#services">نقل مكاتب وشركات</a></li>
-        </ul>
+      <div class="footer-col">
+        <div class="footer-col-title">روابط سريعة</div>
+        <a href="#about">من نحن</a>
+        <a href="#process">آلية العمل</a>
+        <a href="#gallery">أعمالنا</a>
+        <a href="#why">لماذا نحن</a>
+        <a href="#coverage">مناطق التغطية</a>
       </div>
-
-      <div>
-        <div class="footer__col-title">تواصل</div>
-        <ul class="footer__list">
-          <li><span>القصيم — بريدة</span></li>
-          <li><a href="tel:0582717472" class="footer__phone">0582717472</a></li>
-          <li><a href="tel:0577801602" class="footer__phone">0577801602</a></li>
-          <li><span>يومياً 7 ص — 12 م</span></li>
-          <li><span>ضمان مكتوب على كل عملية</span></li>
-        </ul>
+      <div class="footer-col">
+        <div class="footer-col-title">تواصل معنا</div>
+        <a href="tel:0582717472" class="footer-phone">0582717472</a>
+        <a href="tel:0577801602" class="footer-phone">0577801602</a>
+        <a href="#">بريدة، منطقة القصيم</a>
+        <a href="#">سبعة أيام في الأسبوع</a>
+        <a href="#">7:00 ص — 12:00 م</a>
       </div>
     </div>
-
-    <div class="footer__bottom">
-      <div class="footer__bottom-text">© 2024 المحمدي لنقل العفش والأثاث — جميع الحقوق محفوظة</div>
-      <div class="footer__bottom-keys">نقل عفش بالقصيم · نقل أثاث بريدة · فك وتركيب · تغليف · نقل مكيفات · نقل مطابخ · نقل مكاتب · شركة نقل عفش</div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 المحمدي لنقل العفش والأثاث — جميع الحقوق محفوظة</div>
+      <div class="footer-keys">نقل عفش بالقصيم · نقل عفش بريدة · نقل عفش عنيزة · فك وتركيب أثاث · نقل مكاتب · تغليف عفش · شركة نقل عفش</div>
     </div>
   </div>
 </footer>
 
-<!-- ===== Floating call ===== -->
-<div class="float-call" id="float-call">
-  <a href="tel:0582717472" class="float-call__btn" aria-label="اتصل بنا">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-  </a>
-  <a href="https://wa.me/966582717472" class="float-call__btn float-call__btn--ghost" aria-label="واتساب">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+<!-- FLOATING BUTTONS -->
+<div class="float-btns" id="floatBtns">
+  <a href="tel:0577801602" class="float-btn call2" aria-label="اتصل الرقم الثاني"><i class="fas fa-phone-alt"></i></a>
+  <a href="tel:0582717472" class="float-btn call" aria-label="اتصل الآن"><i class="fas fa-phone-alt"></i></a>
+  <button class="float-btn up" id="upBtn" aria-label="أعلى الصفحة"><i class="fas fa-arrow-up"></i></button>
 </div>
 
 <script>
-/* ===== Lenis smooth scroll ===== */
-let lenis;
-if (typeof Lenis !== 'undefined' && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  lenis = new Lenis({ duration: 1.1, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true, smoothTouch: false });
-  function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
-  requestAnimationFrame(raf);
-  if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-    lenis.on('scroll', ScrollTrigger.update);
-    gsap.ticker.add((time) => lenis.raf(time * 1000));
-    gsap.ticker.lagSmoothing(0);
-  }
-}
-if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') { gsap.registerPlugin(ScrollTrigger); }
-
-/* ===== Nav scroll state ===== */
-const nav = document.getElementById('nav');
-const floatCall = document.getElementById('float-call');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 60) { nav.classList.add('is-scrolled'); floatCall.classList.add('is-visible'); } 
-  else { nav.classList.remove('is-scrolled'); floatCall.classList.remove('is-visible'); }
-}, { passive: true });
-
-/* ===== Hero animation ===== */
-function startHeroAnimation() {
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReduced || typeof gsap === 'undefined') {
-    document.querySelectorAll('#hero-eyebrow, #hero-title, #hero-sub, #hero-cta').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
-    return;
-  }
-  gsap.timeline({ delay: 0.2 })
-    .to('#hero-eyebrow', { opacity: 1, y: 0, duration: 0.7, ease: 'power2.out' })
-    .to('#hero-title', { opacity: 1, y: 0, duration: 1.1, ease: 'power3.out' }, '-=0.35')
-    .to('#hero-sub', { opacity: 1, y: 0, duration: 0.85, ease: 'power2.out' }, '-=0.55')
-    .to('#hero-cta', { opacity: 1, y: 0, duration: 0.7, ease: 'power2.out' }, '-=0.45');
-}
-window.addEventListener('load', startHeroAnimation);
-
-/* ===== Hero background slider (auto + dots, responsive) ===== */
-(function heroSliderInit() {
-  const slider = document.getElementById('heroSlider');
-  const dotsWrap = document.getElementById('heroDots');
-  if (!slider || !dotsWrap) return;
-  const slides = Array.from(slider.querySelectorAll('.hero__slide'));
-  if (!slides.length) return;
-
-  let current = 0;
-  let timer = null;
-  const INTERVAL = 5000;
-
-  slides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.className = 'hero__slider-dot' + (i === 0 ? ' is-active' : '');
-    dot.setAttribute('aria-label', 'صورة ' + (i + 1));
-    dot.addEventListener('click', () => goTo(i, true));
-    dotsWrap.appendChild(dot);
-  });
-  const dots = Array.from(dotsWrap.children);
-
-  function goTo(index, manual) {
-    slides[current].classList.remove('is-active');
-    dots[current].classList.remove('is-active');
-    current = (index + slides.length) % slides.length;
-    slides[current].classList.add('is-active');
-    dots[current].classList.add('is-active');
-    if (manual) restart();
-  }
-
-  function next() { goTo(current + 1); }
-
-  function restart() {
-    if (timer) clearInterval(timer);
-    timer = setInterval(next, INTERVAL);
-  }
-
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    restart();
-  }
-})();
-
-/* ===== Sibling stagger setup ===== */
-document.querySelectorAll('[data-stagger]').forEach(block => { [...block.children].forEach((c, i) => c.style.setProperty('--i', i)); });
-
-/* ===== Reveal observer ===== */
-const revealObs = new IntersectionObserver((entries) => {
-  entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-in'); revealObs.unobserve(entry.target); } });
-}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
-document.querySelectorAll('[data-reveal]').forEach(el => revealObs.observe(el));
-
-/* ===== Stacked cards ===== */
-function setupStackedCards() {
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const cards = document.querySelectorAll('.service-card');
-  if (!cards.length || prefersReduced || typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
-    cards.forEach(card => { card.style.position = 'relative'; card.style.transform = 'none'; card.style.top = 'auto'; card.style.left = 'auto'; card.style.margin = '2rem auto'; card.style.opacity = '1'; });
-    const pin = document.querySelector('.services-stack-pin');
-    if (pin) { pin.style.height = 'auto'; pin.style.display = 'block'; pin.style.padding = '2rem 1.5rem'; }
-    const stack = document.querySelector('.services-stack');
-    if (stack) stack.style.height = 'auto';
-    return;
-  }
-
-  cards.forEach((card, i) => {
-    if (i === 0) { gsap.set(card, { y: 0, opacity: 1, scale: 1, zIndex: 1 }); } 
-    else { gsap.set(card, { y: window.innerHeight * 0.6, opacity: 0, scale: 1, zIndex: i + 1 }); }
-  });
-
-  ScrollTrigger.create({
-    trigger: '.services-stack', start: 'top top', end: `+=${cards.length * 90}%`,
-    pin: '.services-stack-pin', pinSpacing: true, scrub: 1, invalidateOnRefresh: true,
-    onUpdate: (self) => {
-      const total = cards.length; const seg = 1 / total;
-      cards.forEach((card, i) => {
-        if (i === 0) {
-          const cp = gsap.utils.clamp(0, 1, self.progress / seg);
-          gsap.set(card, { opacity: 1 - cp * 0.35, scale: 1 - cp * 0.04, filter: `brightness(${1 - cp * 0.3})` });
-        } else {
-          const enterStart = (i - 1) * seg; const enterEnd = i * seg;
-          const enterProgress = gsap.utils.clamp(0, 1, (self.progress - enterStart) / (enterEnd - enterStart));
-          const recedeStart = i * seg; const recedeEnd = (i + 1) * seg;
-          const recedeProgress = i < total - 1 ? gsap.utils.clamp(0, 1, (self.progress - recedeStart) / (recedeEnd - recedeStart)) : 0;
-          gsap.set(card, { y: (1 - enterProgress) * window.innerHeight * 0.6, opacity: enterProgress * (1 - recedeProgress * 0.35), scale: 1 - recedeProgress * 0.04, filter: `brightness(${1 - recedeProgress * 0.3})`, zIndex: i + 1 });
-        }
-      });
-    },
-    onLeaveBack: () => {
-      cards.forEach((card, i) => {
-        if (i === 0) { gsap.set(card, { opacity: 1, scale: 1, filter: 'brightness(1)' }); } 
-        else { gsap.set(card, { y: window.innerHeight * 0.6, opacity: 0 }); }
-      });
-    }
-  });
-}
-setupStackedCards();
-
-/* ===== Smooth anchor scrolling ===== */
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', (e) => {
-    const href = link.getAttribute('href');
-    if (href === '#' || href.length < 2) return;
-    const target = document.querySelector(href);
-    if (target && lenis) { e.preventDefault(); lenis.scrollTo(target, { offset: -60, duration: 1.4 }); } 
-    else if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-  });
-});
-
-/* ===== Mobile burger & close logic ===== */
+// ===== Mobile Menu =====
 const burger = document.getElementById('burger');
 const mobileMenu = document.getElementById('mobileMenu');
 const mobileClose = document.getElementById('mobileClose');
 
-function closeMobileMenu() {
-  if (mobileMenu) mobileMenu.classList.remove('is-open');
-  if (burger) burger.classList.remove('is-open');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+});
+mobileClose.addEventListener('click', closeMenu);
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+function closeMenu() {
+  burger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
 }
 
-if (burger && mobileMenu) {
-  burger.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('is-open');
-    burger.classList.toggle('is-open', isOpen);
+// ===== Scroll Animations =====
+const fadeEls = document.querySelectorAll('.fade-up');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
   });
-}
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+fadeEls.forEach(el => observer.observe(el));
 
-if (mobileClose) {
-  mobileClose.addEventListener('click', closeMobileMenu);
-}
+// ===== Floating Buttons =====
+const floatBtns = document.getElementById('floatBtns');
+const upBtn = document.getElementById('upBtn');
 
-/* Close mobile menu when a link or phone is clicked */
-document.querySelectorAll('.nav__mobile-link, .nav__mobile-phone').forEach(link => {
-  link.addEventListener('click', closeMobileMenu);
+window.addEventListener('scroll', () => {
+  floatBtns.classList.toggle('show', window.scrollY > 600);
+}, { passive: true });
+
+upBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-/* ===== Resize trigger ===== */
-let resizeTimer;
-window.addEventListener('resize', () => {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(() => { if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh(); }, 250);
-});
+// ===== Nav shadow on scroll =====
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 10) {
+    nav.style.boxShadow = '0 2px 20px rgba(0,0,0,.08)';
+  } else {
+    nav.style.boxShadow = 'none';
+  }
+}, { passive: true });
 </script>
 </body>
 </html>
