@@ -10,7 +10,7 @@
 ✓ LCP (Largest Contentful Paint) < 2.5 ثانية
 ✓ FID (First Input Delay) < 100 ميلي ثانية  
 ✓ CLS (Cumulative Layout Shift) < 0.1
-```
+``` 
 
 ### كود لقياس الأداء:
 ```javascript

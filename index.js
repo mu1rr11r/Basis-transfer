@@ -14,7 +14,7 @@ function closeMenu() {
   burger.classList.remove('open');
   mobileMenu.classList.remove('open');
   document.body.style.overflow = '';
-}
+} 
 
 // ===== Scroll Animations =====
 const fadeEls = document.querySelectorAll('.fade-up');

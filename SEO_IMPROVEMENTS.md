@@ -14,7 +14,7 @@
 
 #### ما تم إضافته:
 ```html
-✓ Meta Viewport و X-UA-Compatible
+✓ Meta Viewport و X-UA-Compatible 
 ✓ Meta Language (العربية)
 ✓ Title و Description محسّنة
 ✓ Keywords ذات صلة محلية

@@ -13,7 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="language" content="ar">
-
+ 
 <!-- ===== TITLE & DESCRIPTION ===== -->
 <title>[PAGE_TITLE] | المحمدي - نقل عفش القصيم</title>
 <meta name="description" content="[PAGE_DESCRIPTION] - شركة المحمدي المتخصصة في نقل العفش والأثاث بالقصيم">
