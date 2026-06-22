@@ -1,0 +1,59 @@
+# ===== ROBOTS.TXT - Google SEO Guidelines Compliant =====
+# شركة المحمدي لنقل العفش والأثاث بالقصيم
+# Last Updated: 2025-06-22
+
+# ===== ALLOW ALL BOTS =====
+User-agent: *
+Allow: /
+Disallow: 
+
+# ===== GOOGLE-SPECIFIC SETTINGS =====
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# ===== PREVENT INDEXING OF PRIVATE PATHS =====
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /node_modules/
+Disallow: /assets/cache/
+Disallow: /?*sort=
+Disallow: /?*filter=
+
+# ===== ALLOW MEDIA FILES FOR RICH SNIPPETS =====
+User-agent: *
+Allow: *.jpg$
+Allow: *.jpeg$
+Allow: *.png$
+Allow: *.gif$
+Allow: *.webp$
+Allow: *.svg$
+
+# ===== BING SETTINGS =====
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# ===== RATE LIMITING =====
+Crawl-delay: 1
+
+# ===== SITEMAP REFERENCES =====
+# Inform search engines about XML sitemaps
+Sitemap: https://almohannadi-movers.sa/sitemap.xml
+Sitemap: https://almohannadi-movers.sa/sitemap-ar.xml
+
+# ===== BLOCK BAD BOTS =====
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
