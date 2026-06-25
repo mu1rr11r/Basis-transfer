@@ -301,6 +301,8 @@ ul{list-style:none}
 .float-btn:hover{transform:scale(1.08)}
 .float-btn.call{background:var(--orange)}
 .float-btn.call2{background:var(--blue)}
+.float-btn.whatsapp{background:#25d366}
+.float-btn.whatsapp:hover{background:#20ba58}
 .float-btn.up{background:var(--text3);font-size:.9rem}
 .float-btn.up::after{display:none}
 @media(max-width:480px){.float-btn{width:46px;height:46px;font-size:1rem}.float-btns{bottom:1rem;left:1rem}}
